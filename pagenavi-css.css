@@ -1,0 +1,57 @@
+.wp-pagenavi
+{
+	font-size:1.2em;
+	margin-top:10px;
+	text-align:right;
+}
+.wp-pagenavi a, .wp-pagenavi a:link
+{	background-color: #FFFFFF;
+	border: 1px solid #CACAC8;
+	color: #2E2E2E;
+	margin: 2px;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+.wp-pagenavi a:visited
+{	background-color: #FFFFFF;
+	border: 1px solid #CACAC8;
+	color: #2E2E2E;
+	margin: 2px;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+.wp-pagenavi a:hover
+{	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	color: #000000;
+}
+.wp-pagenavi a:active
+{	background-color: #FFFFFF;
+	border: 1px solid #CACAC8;
+	color: #2E2E2E;
+	margin: 2px;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+.wp-pagenavi span.pages
+{	background-color: #FFFFFF;
+	border: 1px solid #CACAC8;
+	color: #2E2E2E;
+	margin: 2px;
+	padding: 2px 4px;
+}
+.wp-pagenavi span.current
+{	background-color: #FFFFFF;
+	border: 1px solid #CACAC8;
+	color: #2E2E2E;
+	font-weight: bold;
+	margin: 2px;
+	padding: 2px 4px;
+}
+.wp-pagenavi span.extend
+{	background-color: #FFFFFF;
+	border: 1px solid #CACAC8;
+	color: #2E2E2E;
+	margin: 2px;
+	padding: 2px 4px;
+}

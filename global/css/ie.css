@@ -1,0 +1,21 @@
+/* IE fix
+__________*/
+
+div.inputDefault{
+	overflow:hidden;
+	position:relative;
+}
+div.inputDefault input{
+	border-color:transparent;
+	position:absolute;
+	left:4px;
+	top:2px;
+}
+div.inputDefault textarea
+, div#whats-new-textarea textarea
+, div.ac-textarea textarea{
+	border-color:transparent;
+}
+div.ac-textarea textarea{
+	height:100%;
+}

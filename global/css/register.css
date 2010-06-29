@@ -1,0 +1,85 @@
+/* Bp Registration
+*  
+*  Author: Marcos Maia Lopes
+*  Author e-mail: marcos@creativemarkup.com.br
+*
+_____________________________________________*/
+
+/* Registration */
+.registration div.main h1{
+	color:#017bae;
+	font-size:2.4em;
+	font-weight:bold;
+	letter-spacing:-1px;
+	margin-bottom:15px;
+}
+.registration div.main p.desc{
+    margin-bottom:15px;
+}
+.registration div.main div.register-section{
+    margin-bottom:25px;
+    width:50%;
+}
+.registration div.main div.register-section h4{
+	color:#5b5b5b;
+	font-size:1.8em;
+	font-weight:bold;
+	letter-spacing:-1px;
+}
+.registration div.main div#basic-details-section{
+    display:inline;
+    float:right;
+}
+.registration div.main div#profile-details-section{
+    display:inline;
+    float:left;
+}
+.registration div.main div#blog-details-section{
+    float:right;
+}
+.registration div.main div#blog-details-section p{
+    margin-top:15px;
+}
+.registration div.main div.register-section label{
+    color:#3f3f3f;
+    font-weight:bold;
+}
+.registration div.main div.register-section div.inputDefault{
+    background:#fff;
+    display:block;
+	height:auto;
+    float:none;
+    margin-right:30px;
+    width:auto;
+}
+.registration div.main div.register-section div.inputDefault textarea{
+	border:none;
+	width:100%;
+}
+.registration div.main div.register-section input{
+    border:none;
+	height:17px;
+	width:100%;
+}
+.registration #signup_with_blog
+, .registration #signup_blog_privacy_public
+, .registration #signup_blog_privacy_private{
+    margin-right:5px;
+    width:auto;
+}
+.registration div.main div.register-section select{
+    height:25px;
+    padding:5px;
+    width:100px;
+}
+.registration div.main .submitDefault{
+    clear:both;
+    margin-left:0;
+    float:right;
+}
+.registration div.radio input{
+	width:auto !important;
+}
+.registration div.main .error{
+	margin-right:30px;
+}

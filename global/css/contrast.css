@@ -1,0 +1,638 @@
+/* contrast.css 
+* 
+*  Author: Marcos Maia Lopes
+*  Author e-mail: marcos@creativemarkup.com.br
+*
+_____________________________________________*/
+
+/*------------------CONTRASTE 1----------------------*/
+
+html.contrast1 body #header .title a{
+    background:url("../img/tit/tit_logoContrast1.jpg") no-repeat left center;
+}
+
+html.contrast1 body
+, html.contrast1 #footer .footer{
+	background:#D3E5FB;
+}
+
+html.contrast1 #header
+, html.contrast1 #footer .navFooter{
+	background:#19409F;
+	border-top:3px solid #F1F1F1;
+}
+
+html.contrast1 #header div.menu
+, html.contrast1 #header div.menu li{
+	background:#D0E2F8;
+	border-color:#AFC8E6;
+}
+
+html.contrast1 #header div.menu a{
+	color:#4B6192;
+}
+
+html.contrast1 #header ul.nav li:hover a
+, html.contrast1 #header ul.bpNav li:hover a
+, html.contrast1 #header ul.nav li ul li.hover a
+, html.contrast1 #header ul.nav li ul li:hover a{
+	color:#FFFFFF !important;
+}
+
+html.contrast1 #header ul.nav li.current_page_item a
+, html.contrast1 #header ul.bpNav li.selected a{
+	background:#508BD4;
+	color:#FFFFFF !important;
+}
+
+html.contrast1 #header ul.nav li ul{
+	background:#F7F1D7;
+}
+
+html.contrast1 div#general div.widget_login div.panel h3{
+	color:#06006A;
+}
+
+html.contrast1 span.time-since{
+	color:#444444;
+}
+
+html.contrast1 div#general div.tabs{
+	border-color:#C4D1E4;
+}
+
+html.contrast1 div#general div.tabs ul.tabs{
+	background:#C7D9EF;
+	border-color:#C4D0E6;
+}
+
+html.contrast1 div#general div.tabs ul.tabs li.ui-tabs-selected
+, html.contrast1 div#general div.tabs ul.tabs li.ui-tabs-current{
+	background:#79B2F9;
+}
+	
+html.contrast1 div#general div.tabs ul.tabs li{
+	background:#689DE1;
+	border-color:transparent;
+}
+
+html.contrast1 div#general div.tabs ul.tabs li a{
+	color:#061F6F;
+}
+
+html.contrast1 a:link{
+	color:#19409B;
+}
+
+html.contrast1 a:visited{
+	color:#9D8D2B;
+}
+
+html.contrast1 p
+, html.contrast1 li
+, html.contrast1 .load-more a{
+	color:#06006A !important;
+}
+
+html.contrast1 div#general div.panel p{
+	color:#333333 !important;
+}
+
+html.contrast1 .single #general #content div.main h1
+, html.contrast3 .page #general #content div.main h1{
+	color:#BCDE42;
+}
+
+html.contrast1 .posts-list div.main h1{
+	color:#BCDE42;
+}
+
+html.contrast1 .wp-pagenavi a, .wp-pagenavi a:link{
+	background-color:#F7F1D7;
+}
+
+html.contrast1 .single #general #content div.main div.author
+, html.contrast1 .page #general #content div.main div.author{
+	background:none repeat scroll 0 0 #222222;
+}
+
+html.contrast1 .single #general #content div.main div.author a
+, html.contrast1 .page #general #content div.main div.author a{
+	color:#BCDE42;
+}
+
+html.contrast1 .postContent blockquote{
+	background:#F7F1D7;
+}
+
+html.contrast1 div#general div.widget_login div.panel div.msg{
+	background:#CABC63;
+	border:1px solid #A39643;
+}
+
+html.contrast1 div#general div.widget_customPosts li .thumb
+, html.contrast1 div#general div.widget_activity img
+, html.contrast1.activity div#general div.main img
+, html.contrast1 .load-more a
+, html.contrast1 div#general div.widget_login div.panel img{
+	border-color:#CFCAB4;
+}
+
+html.contrast1 div#general div.widget_customPosts li
+, html.contrast1 div#general div.widget_rss li
+, html.contrast1 div#general div.widget_activity ul.activity-list li
+, html.contrast1.activity div#general div.main ul.activity-list li
+, html.contrast2.groups div#general div.main ul.activity-list li
+, html.contrast1 div.item-list-tabs
+, html.contrast1 div#general div.widget_recentComments li{
+	border-color:#D2CDB7;
+}
+
+html.contrast1 .load-more a
+, html.contrast1 div#general #content div.widget_activity .load-more
+, html.contrast1 div#general div.widget_activity ul.activity-list li
+, html.contrast1.activity div#general div.main ul.activity-list li
+, html.contrast1.groups div#general div.main ul.activity-list li{
+	background:transparent;
+	color:#FFFFFF;
+}
+
+html.contrast1 div#general div.main ul.activity-type-tabs li a
+, html.contrast1 div#general div.main div.item-list-tabs li a{
+	color:#20211C;
+}
+
+html.contrast1 #footer .navFooter a
+, html.contrast1 #footer .navFooter h3{
+	color:#F7F1D7;
+}
+
+html.contrast1 body .odd
+, body .alt{
+	background:#c0d5ee;
+}
+
+html.contrast1 .pagination  {
+	background:none repeat scroll 0 0 #C0D5EE;
+}
+
+/*------------------CONTRASTE 2----------------------*/
+
+html.contrast2 body #header .title a{
+    background:url("../img/tit/tit_logoContrast2.jpg") no-repeat left center;
+}
+
+html.contrast2 body{
+	background: #F7F1D7;
+}
+
+html.contrast2 #header{
+	background:#9D8D2B;
+	border-top:3px solid #F1F1F1;
+}
+
+html.contrast2 #header div.menu
+, html.contrast2 #header div.menu li{
+	background:#F7F1D7;
+	border-color:#CFCAB4;
+}
+
+html.contrast2 #header div.menu a{
+	color:#9D8D2B;
+}
+
+html.contrast2 #header ul.nav li:hover a
+, html.contrast2 #header ul.bpNav li:hover a
+, html.contrast2 #header ul.nav li ul li.hover a
+, html.contrast2 #header ul.nav li ul li:hover a{
+	color:#FFFFFF !important;
+}
+
+html.contrast2 #header ul.nav li.current_page_item a
+, html.contrast2 #header ul.bpNav li.selected a{
+	background:#2F328F;
+	color:#FFFFFF !important;
+}
+
+html.contrast2 #header ul.nav li ul{
+	background:#F7F1D7;
+}
+
+html.contrast2 div#general div.widget_login div.panel h3{
+	color:#06006A;
+}
+
+html.contrast2 div#general div.widget_login div.panel div.linksAdmin a{
+	color:#9D8D2B;
+}
+
+html.contrast2 span.time-since{
+	color:#444444;
+}
+
+html.contrast2 div#general div.tabs{
+	border-color:#C6C1AD;
+}
+
+html.contrast2 div#general div.tabs ul.tabs{
+	background:#EBE5CD;
+	border-color:#E3DDC3;
+}
+
+html.contrast2 div#general div.tabs ul.tabs li.ui-tabs-selected
+, html.contrast2 div#general div.tabs ul.tabs li.ui-tabs-current{
+	background:#06006A;
+}
+
+html.contrast2 div#general div.tabs ul.tabs li{
+	background:#CABC63;
+	border-color:transparent;
+}
+
+html.contrast2 div#general div.tabs ul.tabs li a{
+	color:#564D0C;
+}
+
+html.contrast2 a:link{
+	color:#9D8D2B;
+}
+
+html.contrast2 a:visited{
+	color:#9D8D2B;
+}
+
+html.contrast2 p, html.contrast2 li
+, html.contrast2 .load-more a{
+	color:#06006A !important;
+}
+
+html.contrast2 div#general div.panel p{
+	color:#333333 !important;
+}
+
+html.contrast2 .single #general #content div.main h1
+, html.contrast3 .page #general #content div.main h1{
+	color:#BCDE42;
+}
+
+html.contrast2 .posts-list div.main h1{
+	color:#BCDE42;
+}
+
+html.contrast2 .wp-pagenavi a
+, .wp-pagenavi a:link {
+	background-color:#F7F1D7;
+}
+html.contrast2 .single #general #content div.main div.author
+, html.contrast2 .page #general #content div.main div.author{
+	background:#222222;
+}
+
+html.contrast2 .single #general #content div.main div.author a
+, html.contrast2 .page #general #content div.main div.author a{
+	color:#BCDE42;
+}
+
+html.contrast2 .postContent blockquote{
+	background:#F7F1D7;
+}
+
+html.contrast2 div#general div.widget_login div.panel div.msg{
+	background:#CABC63;
+	border:1px solid #A39643;
+}
+
+html.contrast2 div#general div.widget_recentComments li p a{
+	color:#9D8D2B;
+}
+
+html.contrast2 div#general div.widget_customPosts li .thumb
+, html.contrast2 div#general div.widget_activity img
+, html.contrast2.activity div#general div.main img
+, html.contrast2 .load-more a
+, html.contrast2 div#general div.widget_login div.panel img{
+	border-color:#CFCAB4;
+}
+
+html.contrast2 div#general div.widget_customPosts li
+, html.contrast2 div#general div.widget_rss li
+, html.contrast2 div#general div.widget_activity ul.activity-list li
+, html.contrast2.activity div#general div.main ul.activity-list li
+, html.contrast2.groups div#general div.main ul.activity-list li
+, html.contrast2 div.item-list-tabs
+, html.contrast2 div#general div.widget_recentComments li{
+	border-color:#D2CDB7;
+}
+
+html.contrast2 .load-more a
+, html.contrast2 div#general #content div.widget_activity .load-more
+, html.contrast2 div#general div.widget_activity ul.activity-list li
+, html.contrast2.activity div#general div.main ul.activity-list li
+, html.contrast2.groups div#general div.main ul.activity-list li{
+	background:transparent;
+	color:#FFFFFF;
+}
+
+html.contrast2 div#general div.main ul.activity-type-tabs li a
+, html.contrast2 div#general div.main div.item-list-tabs li a{
+	color:#20211C;
+}
+
+html.contrast2 #footer .footer{
+	background:#F7F1D7;
+}
+
+html.contrast2 #footer .navFooter a
+, html.contrast2 #footer .navFooter h3{
+	color:#F7F1D7;
+}
+
+html.contrast2 #footer .navFooter{
+	background:#9D8D2B;
+}
+
+html.contrast2 div#general div.widget_tagcloud a:hover{
+    background-color:#9D8D2B;
+    color:#000;
+}
+
+html.contrast2 body .odd
+, body .alt{
+	background:#EAE2C1;
+}
+
+
+/*------------------CONTRASTE 3----------------------*/
+
+html.contrast3 .activity div#content div.main h1
+, html.contrast3 body.directory div#content div.main form h1
+, html.contrast3 .group-create div#content div.main h1
+, html.contrast3 .create div#content div.main h1{
+	color:#BCDE42;
+}
+
+html.contrast3 body #header .title a{
+    background:url("../img/tit/tit_logoContrast3.jpg") no-repeat left center;
+}
+
+html.contrast3 body{
+	background:#000000;
+}
+
+html.contrast3 #header{
+	background:#BCDE42;
+	border-top:3px solid #F1F1F1;
+}
+
+html.contrast3 #header div.menu
+, html.contrast3 #header div.menu li{
+	background:#000000;
+	border-color:#333333;
+}
+
+html.contrast3 #header div.menu a{
+	color:#BCDE42 !important;
+}
+
+html.contrast3 #header ul.nav li:hover > a
+, html.contrast3 #header ul.bpNav li:hover a
+, html.contrast3 #header ul.nav li ul li:hover a{
+	color:#FFFFFF !important;
+}
+
+html.contrast3 #header ul.nav li.current_page_item a
+, html.contrast3 #header ul.bpNav li.selected a{
+	background:#FFFFFF;
+	color:#000000 !important;
+}
+
+html.contrast3 #header ul.nav li ul{
+	background:#000000;
+}
+
+html.contrast3 div#general div.widget_login div.panel h3{
+	color:#FFFFFF;
+}
+
+html.contrast3 div#general div.widget_login div.panel div.linksAdmin a{
+	color:#BCDE42;
+}
+
+html.contrast3 div#general div.tabs{
+	border-color:#333333;
+}
+
+html.contrast3 div#general div.tabs ul.tabs
+, html.contrast3 #content div.main div.single div#item-nav {
+	background:#222222;
+	border-color:#151515;
+}
+
+html.contrast3 div#general div.tabs ul.tabs li.ui-tabs-selected
+, html.contrast3 div#general div.tabs ul.tabs li.ui-tabs-current{
+	background:#FFF349;
+}
+
+html.contrast3 div#general div.tabs ul.tabs li{
+	background:#F9F48C;
+	border-color:transparent;
+}
+
+html.contrast3 div#general div.tabs ul.tabs li a{
+	color:#000000;
+}
+
+html.contrast3 a:link{
+	color:#BCDE42;
+}
+
+html.contrast3 a:visited{
+	color:#BCDE42;
+}
+
+html.contrast3 p, html.contrast3 li
+, html.contrast3 .load-more a{
+	color:#FFFFFF !important;
+}
+
+html.contrast3 div#general div.panel p{
+	color:#333333 !important;
+}
+
+html.contrast3 .single #general #content div.main h1
+, html.contrast3 .page #general #content div.main h1{
+	color:#BCDE42;
+}
+
+html.contrast3 .posts-list div.main h1{
+	color:#BCDE42;
+}
+
+html.contrast3 .wp-pagenavi a, .wp-pagenavi a:link{
+	background-color:#000000;
+}
+
+html.contrast3 .single #general #content div.main div.author
+, html.contrast3 .page #general #content div.main div.author{
+	background:#222222;
+}
+
+html.contrast3 .single #general #content div.main div.author a
+, html.contrast3 .page #general #content div.main div.author a{
+	color:#BCDE42;
+}
+
+html.contrast3 .postContent blockquote{
+	background:#000000;
+}
+
+html.contrast3 div#general div.widget_login div.panel div.msg{
+    background:#FFFFFF;
+    border:1px solid #AAAAAA;
+}
+
+html.contrast3 div#general div.widget_recentComments li p a{
+	color:#BCDE42;
+}
+
+html.contrast3 div#general div.widget_customPosts li .thumb
+, html.contrast3 div#general div.widget_activity img
+, html.contrast3.activity div#general div.main img
+, html.contrast3 .load-more a
+, html.contrast3 div#general div.widget_login div.panel img
+, html.contrast3 div#general div.main div.activity-comments form div.ac-textarea
+, html.contrast3 div#general div.widget_tweetblender div.tb_tweet
+, html.contrast3 div#general div.widget_tweetblender a.tb_photo img
+, html.contrast3 div#general div.widget_bp_groups_widget ul.item-list a img
+, html.contrast3 div#general div.widget_bp_core_members_widget ul.item-list a img
+, html.contrast3 div#general div.widget_destaque div.hlTabs .thumb
+, html.contrast3 .posts-list div.main ul.posts li a.thumb img{
+	border-color:#333;
+}
+
+html.contrast3 div#general div.widget_customPosts li
+, html.contrast3 div#general div.widget_rss li
+, html.contrast3 div#general div.widget_activity ul.activity-list li
+, html.contrast3.activity div#general div.main ul.activity-list li
+, html.contrast3.groups div#general div.main ul.activity-list li
+, html.contrast3 div.item-list-tabs
+, html.contrast3 div#general div.widget_recentComments li
+, html.contrast3 div#general div.widget_tweetblender div.tb_tweet
+, html.contrast3 div#general div.widget_tweetblender div.tb_tweetlist
+, html.contrast3 div#general div.widget_bp_groups_widget div.item-options
+, html.contrast3 div#general div.widget_bp_core_members_widget div.item-options
+, html.contrast3 .posts-list div.main ul.posts li
+, html.contrast3 #header ul.nav li ul{
+	border-color:#272727;
+}
+
+html.contrast3 .load-more a
+, html.contrast3 div#general #content div.widget_activity .load-more
+, html.contrast3 div#general div.widget_activity ul.activity-list li
+, html.contrast3.activity div#general div.main ul.activity-list li
+, html.contrast3.groups div#general div.main ul.activity-list li
+, html.contrast3 div.activity-comments form textarea
+, html.contrast3 div#general div.main div.activity-comments form div.ac-textarea
+, html.contrast3 div#general div.widget_login div.inputDefault input
+, html.contrast3 div#general div.widget_register div.inputDefault input
+, html.contrast3 div#general div.widget_register form#registerform label{
+	background:transparent;
+	color:#FFF;
+}
+
+html.contrast3 #tooltip{
+	background:#333;
+	color:#fff;
+}
+
+html.contrast3 #tooltip h3{
+	color:#BCDE42;
+}
+
+html.contrast3 div#general div.main .ac-reply-content .submitDefault
+, html.contrast3 div#general div.widget_login button.submitDefault
+, html.contrast3 div#general div.widget_register button.submitDefault{
+	background:#333;
+	border-color:#333;
+	color:#fff;
+}
+
+html.contrast3 div#general div.widget_activity div.activity-meta
+, html.contrast3 .activity div#general ul.activity-list div.activity-meta{
+	background:#333;
+}
+
+html.contrast3 div#general div.main ul.activity-type-tabs li a
+, html.contrast3 div#general div.main div.item-list-tabs li a{
+	color:#FFF;
+}
+
+html.contrast3 #footer .footer{
+	background:#000;
+}
+
+html.contrast3 #footer .navFooter a
+, html.contrast3 #footer .navFooter h3{
+	color:#000;
+}
+
+html.contrast3 #footer .navFooter{
+	border-top:1px solid #fff;
+	background:#BCDE42;
+}
+
+html.contrast3 div#general div.widget_login div.forever label{
+	color:#FFF;
+}
+
+html.contrast3 body .odd
+, body .alt{
+	background:#111;
+}
+
+html.contrast3 #content div.main ul.item-list li{
+	border-top:1px solid #000;
+}
+
+html.contrat3 .pagination {
+	background:#111;
+}
+
+html.contrast3 div#general div.widget_tagcloud a:hover{
+    background-color:#BCDE42;
+    color:#000;
+}
+
+html.contrast3 div#general div.widget_tagcloud a{
+	color:#fff;	
+}
+
+html.contrast3 .pagination{
+	background:none repeat scroll 0 0 #222222;
+}
+
+html.contrast3 #header div.acc a{
+	color:#000;
+}
+
+html.contrast3 div#general div.widget_activity ul.activity-list li
+,html.contrast3 .activity div#general div.main ul.activity-list li
+,html.contrast3 .groups div#general div.main ul.activity-list li{
+	background:none repeat scroll 0 0 #000000;
+}
+
+html.contrast3 #content div.main div#item-header h2.fn{
+	color:#fff;
+}
+
+html.contrast3 div#general div.widget_tweetblender{
+	color:#fff;
+}
+html.contrast3 #content div.tabs
+, html.contrast3 #content div.main div.single div#item-nav
+, html.contrast3 #content div.main div.single div#item-body
+, html.contrast3 #header div.menu{
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}

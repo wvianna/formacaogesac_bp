@@ -1,0 +1,381 @@
+/* Bp Groups
+*  
+*  Author: Marcos Maia Lopes
+*  Author e-mail: marcos@creativemarkup.com.br
+*
+_____________________________________________*/
+
+/* Groups & Forums */
+.groups div.main img.avatar{
+	border:1px solid #ccc;
+	padding:2px;
+}
+.groups div.main h1 a.button
+, .create div#content div.main h1 a.button
+, .directory div.main h1 a.button{
+	color:#666;
+	font-weight:normal;
+	letter-spacing:0;
+	text-decoration:none;
+	text-transform:lowercase;
+}
+.groups div.main h1 a.button:hover
+, .create div#content div.main h1 a.button:hover
+, .directory div.main h1 a.button:hover{
+	text-decoration:underline;
+}
+.groups div.main div#item-header h1{
+    margin-bottom:10px;
+}
+.groups div.main div#item-header h1 a{
+    color:#3f3f3f;
+    text-decoration:none;
+}
+.groups div.main div#item-header div#groupbutton-1{
+    position:absolute;
+    right:0;
+    top:13px;
+}
+.groups div.main div#item-header div.highlight{
+	display:inline;
+	float:left;
+	margin-right:10px;
+	padding-top:2px;
+}
+.groups div.main div#item-header div.highlight span{
+	display:inline;
+	float:left;
+	height:16px;
+	margin-right:5px;
+	margin-top:-2px;
+}
+.groups div.main div#item-header div.highlight span.publico{
+	background:url('../img/bg/bg_groups.jpg') left top no-repeat;
+	width:18px;
+}
+.groups div.main div#item-header div.highlight span.privado{
+	background:url('../img/bg/bg_groups.jpg') -18px 0 no-repeat;
+	width:12px;
+}
+.groups div.main div#item-header div.highlight span.oculto{
+	background:url('../img/bg/bg_groups.jpg') right top no-repeat;
+	width:15px;
+}
+.groups div.main div#item-header span.activity{
+    display:block;
+    margin-bottom:10px;
+	padding-top:3px;
+}
+.groups div.main div#item-header div#item-meta p{
+    color:#333;
+    font-size:1.2em;
+    line-height:130%;
+    text-align:justify;
+}
+.groups div.main div#subnav li.feed{
+    float:left;
+	position:static;
+}
+.groups div.main div#subnav li.last{
+    float:right;
+}
+.groups div.main div#post-new-topic{
+	margin-top:30px;
+	position:relative;
+}
+.groups div.main form h4{
+	font-size:1.6em;
+}
+.groups div.main form input.inputDefault{
+	display:block;
+	float:none;
+	width:200px;
+}
+.groups div.main form div.inputDefault{
+	display:block;
+	height:auto;
+	float:none;
+	width:auto;
+}
+.groups div.main form div.inputDefault textarea{
+	border:none;
+	width:100%;
+}
+.groups div.main form input#topic_tags{
+	display:inline;
+	float:left;
+}
+.groups div.main form input#submit{
+	margin:0;
+	float:right;
+}
+.groups div.main form#forum-topic-form div.pagination{
+	text-align:right;
+}
+.groups div.main form#forum-topic-form h3{
+	display:inline;
+	float:left;
+	font-size:1.8em;
+	margin-top:-34px;
+}
+.groups div.main form#forum-topic-form div#topic-meta{
+	margin-top:5px;
+}
+.groups div.main form#forum-topic-form div#topic-meta .button{
+	text-decoration:none;
+}
+.groups div.main form#forum-topic-form div#topic-meta div.admin-links a{
+	text-decoration:none;
+}
+.groups div.main form#forum-topic-form img.avatar{
+	display:inline;
+	float:left;
+	margin-right:6px;
+}
+.groups div.main form#forum-topic-form div#topic-meta div.admin-links{
+	margin-top:5px;
+}
+.groups div.main form#forum-topic-form div.poster-meta div.admin-links{
+	display:inline;
+	float:right;
+	margin-right:5px;
+	margin-top:5px;
+}
+.groups div.main form#forum-topic-form div.post-content{
+	margin-top:5px;
+	margin-right:30px;
+}
+.groups div.main form#forum-topic-form div#post-topic-reply{
+	margin-top:15px;
+}
+.groups div.main form#forum-topic-form div#post-topic-reply h4{
+	font-size:1.6em;
+	margin-bottom:10px;
+}
+.groups div.main form#forum-topic-form div#post-topic-reply input#submit{
+	margin:0;
+	margin-top:10px;
+}
+.groups div.main ul.item-list h5{
+	margin-bottom:5px;
+}
+.groups div.main ul.item-list h5 a{
+	font-size:1.2em;
+}
+.groups div.main img.avatar{
+	display:inline;
+	float:left;
+	margin-right:5px;
+}
+.groups div.main div#group-create-tabs li{
+	margin-right:10px !important;
+}
+.groups div.main div#group-create-body label
+, .groups div.main form#group-settings-form label{
+	margin-top:13px;
+}
+.groups div.main div#group-create-body li
+, .groups div.main form#group-settings-form li{
+	list-style:none;
+	margin-top:3px;
+}
+.groups div.main div#group-create-body input
+, .groups div.main form#group-settings-form input{
+	margin-right:3px;
+}
+.groups div.main div#group-create-body div.left-menu img{
+	margin-right:20px;
+}
+.groups div.main div#group-create-body div.main-column .submitDefault{
+	margin:0;
+}
+.groups div.main div#group-create-body div.main-column p{
+	margin-bottom:10px;
+}
+.groups div.main form#create-group-form .submitDefault{
+	float:none;
+	margin:0;
+	margin-top:10px;
+}
+.groups div.main form#create-group-form div.inputDefault{
+	display:block;
+	float:none;
+	height:auto;
+	width:auto;
+}
+.groups div.main form#create-group-form div.inputDefault textarea{
+	border:none;
+	width:100%;
+}
+.groups div.main div#group-create-tabs li.current{
+	font-weight:bold;
+}
+.groups div.main div.mod{
+	position:absolute;
+	right:0;
+	top:6px;
+}
+.groups div.main div.mod h3{
+	color:#3f3f3f;
+	font-size:1.2em;
+	margin-bottom:5px;
+}
+.groups div.main div.mod ul{
+	display:inline;
+	float:right;
+}
+.groups div.main div.mod li{
+	list-style:none;
+}
+.groups #general #content div.main div.mod img.avatar{
+	height:30px;
+	margin:0;
+	padding:2px;
+	width:30px;
+}
+.groups div.main form#group-settings-form{
+	margin-top:10px;
+}
+.groups div.main form#group-settings-form p{
+	margin:5px 0;
+}
+.groups div.main form#group-settings-form .inputDefault{
+	display:block;
+	float:none;
+	margin:0;
+	width:auto;
+}
+.groups div.main form#group-settings-form input.inputDefault{
+	width:200px;
+}
+.groups div.main form#group-settings-form div.inputDefault textarea{
+	border-color:transparent;
+	width:100%;
+}
+.groups div.main form#group-settings-form input#save{
+	float:right;
+}
+.groups div.main form#group-settings-form div.bp-widget{
+	margin-bottom:10px;
+}
+.groups div.main form#group-settings-form ul#admins-list{
+	float:left;
+	width:100%;
+}
+.groups div.main form#group-settings-form ul#admins-list li{
+	float:left;
+	width:100%;
+}
+.groups div.main form#group-settings-form .submitDefault{
+	float:none;
+}
+.groups div.main form#group-settings-form ul#admins-list
+, .groups div.main form#group-settings-form ul#members-list{
+	margin:5px 0;
+}
+.groups div.main form#group-settings-form h5 span.small a{
+	font-weight:normal;
+}
+.groups div.main .current{
+	font-weight:bold;
+}
+
+/* Forums */
+body.forums div#content div.main div#new-topic-post{
+	clear:both;
+}
+body.forums div#content div.main div#new-topic-post .inputDefault{
+	float:none;
+	width:200px;
+}
+body.forums div#content div.main div#new-topic-post .submitDefault{
+	float:none;
+}
+body.forums div#content div.main div#new-topic-post div.inputDefault{
+	display:block;
+	height:auto;
+	width:auto;
+}
+body.forums div#content div.main div#new-topic-post div.inputDefault textarea{
+	border:none;
+	width:100%;
+}
+body.forums div#content div.main table.forum
+, body.groups table.forum{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	display:block;
+	font-size:1.2em;
+	margin:20px 0;
+	text-align:left;
+}
+body.forums div#content div.main table.forum th
+, body.groups table.forum th{
+	color:#565656;
+	padding:10px 0;
+}
+body.forums div#content div.main table.forum th#th-title
+, body.forums div#content div.main table.forum td.td-title
+, body.groups table.forum th#th-title
+, body.groups table.forum td.td-title{
+	padding-left:5px;
+}
+body.forums #content div.main table.forum th#th-freshness
+, body.forums #content div.main table.forum td.td-freshness
+, body.groups table.forum th#th-freshness
+, body.groups table.forum td.td-freshness{
+	padding-right:5px;
+	text-align:center;
+}
+body.forums #content div.main table.forum th
+, body.forums #content div.main table.forum td
+, body.groups table.forum th
+, body.groups table.forum td{
+	padding-right:15px;
+}
+body.forums #content div.main table.forum a
+, body.groups table.forum a{
+	color:#565656;
+}
+body.forums #content div.main table.forum th#th-title
+, body.groups table.forum th#th-title{
+	width:35%;
+}
+body.forums #content div.main table.forum th#th-poster
+, body.groups table.forum th#th-poster{
+	width:25%
+}
+body.forums #content div.main table.forum th#th-group
+, body.groups table.forum th#th-group{
+	width:25%;
+}
+body.forums #content div.main table.forum th#th-postcount
+, body.groups table.forum th#th-postcount{
+	width:5%;
+}
+body.forums #content div.main table.forum th#th-freshness
+, body.groups table.forum th#th-freshness{
+	width:20%;
+}
+body.forums #content div.main table.forum td
+, body.groups table.forum td{
+	border-top:1px solid #EAEAEA;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+body.forums #content div.main table.forum td.td-postcount
+, body.groups table.forum td.td-postcount{
+	text-align:center;
+}
+body.forums #content div.main table.forum td img
+, body.groups table.forum td img{
+	border:1px solid #ccc;
+	display:inline;
+	float:left;
+	height:20px;
+	margin-right:5px;
+	overflow:hidden;
+	padding:2px;
+	text-indent:-999em;
+	width:20px;
+}

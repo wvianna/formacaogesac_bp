@@ -1,0 +1,415 @@
+/* Bp profile
+*  
+*  Author: Marcos Maia Lopes
+*  Author e-mail: marcos@creativemarkup.com.br
+*
+_____________________________________________*/
+
+div#content div.main div.single div.pagination{
+	margin:0 -6px;
+}
+
+/* Home Members */
+#content div.main div#item-header{
+	padding-bottom:0;
+	position:relative;
+}
+#content div.main div#item-header div#message{
+	clear:both;
+	margin:10px 0;
+}
+#content div.main div#item-header div#message p{
+	margin:0;
+}
+#content div.main div#item-header img.avatar
+, .activity-permalink #general div#content ul#activity-stream div.activity-avatar img.avatar{
+	border:1px solid #ccc;
+	display:block;
+	height:150px;
+	margin-left:0;
+	overflow:hidden;
+	padding:4px;
+	text-indent:-999em;
+	width:150px;
+}
+
+#content div.main div#item-header h2.fn{
+	color:#444;
+	font-size:2.5em;
+	font-weight:normal;
+	text-transform:capitalize;
+}
+
+#content div.main div#item-header h2.fn a{
+	text-decoration:none;
+	text-transform:lowercase;
+}
+
+#content div.main div#item-header h2.fn a:hover{
+	text-decoration:underline;
+}
+
+#content div.main div#item-header div#latest-update
+, .activity-permalink #general div#content ul#activity-stream div.activity-content{
+	margin:15px 0 0 163px;
+	padding-left:12px;
+	position:relative;
+}
+.activity-permalink #general div#content div.activity-inner{
+	margin:5px 0;
+}
+.activity-permalink #general div#content div.activity-comments{
+	margin-left:175px;
+}
+.activity-permalink #general div#content div.activity-comments ul{
+	margin-top:5px;
+}
+.activity-permalink #general div#content div.activity-comments img.avatar{
+	border:1px solid #ccc;
+	padding:2px;
+	text-indent:-999em;
+}
+.activity-permalink #general div#content div.activity-comments form{
+	padding:0;
+	margin:10px 0;
+}
+.activity-permalink #general div#content ul#activity-stream li{
+	background:#fff;
+}
+#content div.main div#item-header div#latest-update span.arrow
+, .activity-permalink #general div#content ul#activity-stream div.activity-content span.arrow{
+	background:url('../img/bg/bg_updateArrow.gif') no-repeat;
+	height:12px;
+	left:0;
+	margin-top:-6.5px;
+	position:absolute;
+	top:50%;
+	width:13px;
+}
+#content div.main div#item-header div#latest-update div.inner
+, .activity-permalink #general div#content ul#activity-stream div.activity-content div.inner{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background:#f5f6f6 url('../img/bg/bg_update.gif') left bottom repeat-x;
+	border:1px solid #e0e1e2;
+	padding:10px;
+}
+div#content div.main div#item-header h2.postActivities{
+	color:#525252;
+	font-size:1.7em;
+	font-weight:bold;
+	margin:8px 0;
+}
+div#content div.main div#item-header form#whats-new-form{
+	padding-bottom:0;
+}
+div#content div.main div#item-header form#whats-new-form div#whats-new-content{
+	margin-left:0;
+	padding-left:0;
+}
+div#content div.main div#item-header form#whats-new-form textarea{
+	height:73px;
+}
+div#content div.main div#item-header form#whats-new-form div#whats-new-content #aw-whats-new-submit{
+	float:none;
+}
+div#content div.main div#item-header div#latest-update-logged{
+	color:#777;
+	font-size:1.1em;
+	left:175px;
+	position:absolute;
+	top:140px;
+}
+div#content div.main div.single div#item-buttons{
+	clear:both;
+}
+div#content div.main div.single div#item-buttons div{
+	display:inline;
+	float:left;
+	margin:10px 10px 0 0;
+}
+div#content div.main div.single div.action div.meta
+, .groups div.main div.action div.meta{
+	color:#666;
+	font-size:1.1em;
+}
+div#content div.main div.single div#item-buttons div a
+, .groups div.main div.group-button a
+, .directory div.main div.generic-button a
+, .friends div.main div.generic-button a
+, .friends div.main div.action a.accept
+, .friends div.main div.action a.reject{
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    background-color:#fff;
+    border:1px solid #a2a2aa;
+    color:#4a4a4a;
+	clear:right;
+    cursor:pointer;
+	display:inline;
+	float:right;
+    font-size:1.2em;
+    font-weight:bold;
+	margin-bottom:3px;
+	text-decoration:none;
+    padding:3px 7px 3px 27px;
+}
+div#content div.main div.single div#item-buttons div a:hover
+, .groups div.main div.group-button a:hover
+, .directory div#content div.main div.generic-button a:hover
+, .friends div.main div.generic-button a:hover
+, .friends div.main div.action a.accept:hover
+, .friends div.main div.action a.reject:hover{
+	border-color:#333;
+}
+div#content div.main div.single div#item-buttons div.friendship-button a
+, .groups div.main div.group-button a.join-group
+, .directory div.main div.generic-button a.add
+, .directory div.main div.generic-button a.requested
+, .friends div.main div.generic-button a.add
+, .friends div.main div.generic-button a.requested
+, .friends div.main div.action a.accept
+, .groups div.main a.request-membership{
+	background:#fff url('../img/bt/bt_addFriend.png') 7px center no-repeat;
+}
+div#content div.main div.single div#item-buttons div.friendship-button a.remove
+, .groups div.main div.group-button a.leave-group
+, .directory div.main div.generic-button a.remove
+, .friends div.main div.generic-button a.remove
+, .friends div.main div.action a.reject{
+	background:#fff url('../img/bt/bt_removeFriend.png') 7px center no-repeat;
+}
+div#content div.main div.single div#item-buttons div#post-mention a{
+	background:#fff url('../img/bt/bt_mention.jpg') 7px center no-repeat;
+}
+div#content div.main div.single div#item-buttons div#send-private-message a{
+	background:#fff url('../img/bt/bt_sendMsg.jpg') 7px center no-repeat;
+}
+
+/* Profile */
+body.profile #content div.main div.profile ul.profileFields{
+	list-style:none;
+}
+body.profile #content div.main div.profile ul.profileFields li{
+	border-top:1px solid #f0f0f0;
+	display:block;
+	padding:10px 0;
+}
+body.profile #content div.main div.profile ul.profileFields li:first-child{
+	border:none;
+}
+body.profile #content div.main div.profile ul.profileFields li div.label{
+	display:inline;
+	float:left;
+	margin-right:5px;
+}
+body.profile #content div.main div.profile ul.profileFields li a{
+	color:#333;
+}
+
+/* Edit profile */
+body.profile #content div.main div.profile ul.button-nav{
+	margin:10px 0;
+}
+body.profile #content div.main div.profile ul.button-nav li{
+	display:inline;
+	float:left;
+	margin-right:10px;
+	margin-bottom:15px;
+}
+body.profile #content div.main div.profile ul.button-nav li a{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	background:#03374F;
+	color:#fff;
+	float:left;
+	font-weight:bold;
+	padding:5px 10px;
+	text-decoration:none;
+}
+body.profile #content div.main div.profile ul.button-nav li a:hover
+, body.profile #content div.main div.profile ul.button-nav li.current a{
+	background:#0076A4;
+}
+body.profile #content div.main div.profile form label
+, body.settings #content div.main form label{
+	margin:0;
+}
+body.profile #content div.main div.profile form .inputDefault
+, body.settings #content div.main form input.settings-input{
+	margin:10px 0 15px;
+    float:none;
+	width:200px;
+}
+body.profile #content div.main div.profile form textarea{
+	margin:10px 0 15px;
+}
+body.profile div.radio{
+	margin-bottom:15px;
+}
+body.profile #content div.main div.profile form select
+, body.settings #content div.main form select{
+	color:#333;
+	font-size:1.2em;
+	margin:5px 0 15px;
+	padding:2px 2px 3px;
+	width:90px !important;
+}
+body.profile #content div.main div.profile form .submitDefault
+, body.settings #content div.main form #submit{
+    float:none;
+    margin:15px 0;
+}
+body.profile #content div.main div.profile h4{
+	margin:10px 0;
+}
+body.profile #content div.main div.profile p#avatar-upload{
+	margin:10px 0 5px;
+}
+body.profile #content div.main div.profile form .submitDefault{
+	float:none;
+	margin:0;
+}
+body.profile #content div.main div.profile p .edit{
+	display:block;
+	margin-top:10px;
+}
+
+
+body.settings #content div.main div#subnav{
+	margin-bottom:15px !important;
+}
+body.settings #content form table.notification-settings{
+    border-collapse:collapse;
+    margin:15px 0 0;
+    width:100%;
+}
+body.settings #content form table.notification-settings th
+, body.settings #content form table.notification-settings td{
+	text-align:left;
+	padding:5px 0;
+}
+body.settings #content form table.notification-settings th.yes
+, body.settings #content form table.notification-settings td.yes
+, body.settings #content form table.notification-settings th.no
+, body.settings #content form table.notification-settings td.no{
+	text-align:center;
+}
+body.settings #content form table.notification-settings th.icon{
+    width:0;
+}
+body.settings #content form table.notification-settings th.title{
+    width:80%;
+}
+
+body.settings #content form#account-delete-form div#message
+, form#group-settings-form div#message{
+	font-size:1.1em;
+	margin:10px 0;
+}
+body.settings #content form#account-delete-form div#message p
+, form#group-settings-form div#message p{
+	margin:0;
+}
+
+/* Messages */
+table#message-threads{
+	border-collapse:collapse;
+	border-spacing:0;
+	margin:10px -6px 0;
+	width:auto;
+}
+table#message-threads a{
+	color:#0076A4;
+}
+table#message-threads tr.unread a{
+	font-weight:bold;
+}
+table#message-threads td{
+	padding:8px;
+	vertical-align:middle;
+}
+div.messages-options-nav{
+	background:#eee;
+	font-size:1.1em;
+	margin:0 -6px;
+	padding:5px 10px;
+	text-align:right;
+}
+.messages span.activity{
+	display:block;
+	margin-top:5px;
+}
+.messages p.thread-excerpt{
+	color:#888;
+	font-size:1.1em;
+	margin-top:3px;
+}
+.messages .confirm{
+	background:url('../img/bt/bt_trash.jpg') no-repeat;
+	display:inline-block;
+	height:10px;
+	margin-left:10px;
+	text-indent:-999em;
+	width:10px;
+}
+.messages form#send_message_form .inputDefault{
+	float:none;
+}
+.messages form#send_message_form div.inputDefault{
+	display:block;
+	float:none;
+	height:auto;
+	width:auto;
+}
+.messages form#send_message_form div.inputDefault input
+, .messages form#send_message_form div.inputDefault textarea{
+	border:none;
+	width:100%;
+}
+.messages form#send_message_form div.submit input{
+	float:none;
+	margin:0;
+	margin-top:10px;
+}
+.messages div#message-thread h3#message-subject{
+	margin:10px 0;
+}
+.messages div#message-thread p#message-recipients
+, .messages div#message-thread div.message-metadata{
+	margin-bottom:10px;
+}
+.messages div#message-thread div.message-metadata img.avatar{
+	border:1px solid #ccc;
+	display:inline;
+	float:left;
+	margin-right:5px;
+	padding:2px;
+}
+.messages div#message-thread div.message-metadata span.activity{
+	display:inline;
+	font-weight:normal;
+}
+.messages div#message-thread div.message-content{
+	color:#000;
+	margin-bottom:10px;
+}
+.messages div#message-thread div.inputDefault{
+	display:block;
+	float:none;
+	height:auto;
+	margin:0;
+	width:auto;
+}
+.messages div#message-thread div.inputDefault textarea{
+	border-color:transparent;
+	width:100%;
+}
+.messages div#message-thread div.alt{
+	background:0;
+}
+.messages div#message-thread .submitDefault{
+	margin:0;
+	float:right;
+	margin-top:10px;
+}
