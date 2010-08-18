@@ -524,8 +524,7 @@ font-size:11.5px;
 text-decoration:none;
 }
 #footer {
-/*background:url("imgs/bg_footer.png") repeat-x scroll left top transparent;*/
-background-color: #0076A4;
+background:url("../img/bg/bg_footer.png") repeat-x scroll left top transparent;
 border-bottom:3px solid #F1F1F1;
 clear:both;
 height:27px;
