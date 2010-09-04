@@ -3,7 +3,7 @@
 require( dirname(__FILE__) . '/wp-load.php' );
 
 $uf = $_POST["estado"];
-$sql = "select * from wp_pontogesac where uf = '$uf' order by municipio, estabelecimento;";
+$sql = "select * from wp_gesac_ponto where uf = '$uf' order by municipio, estabelecimento;";
 $rs = mysql_query($sql) or die ("Erro no acesso ao banco");
 
 
