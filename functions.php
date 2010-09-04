@@ -36,6 +36,26 @@
 	include_once(TEMPLATEPATH . '/global/inc/widget_tags.php');
 	include_once(TEMPLATEPATH . '/global/inc/tabbed_dynamic_sidebar.php');
     
+	function fg_custom_profile_fields () {
+  		require_once('userprofile/form.php');
+	}
+	add_action ('bp_after_signup_profile_fields', 'fg_custom_profile_fields');
+
+	function fg_validate_custom_profile_fields () {
+  		global $bp;
+  		/*Verifica se o valor inserido no campo endereço é um número de um ponto válido*/
+  		if ($_POST['field_37']!='') {
+    		$sql = 'select * from wp_pontogesac where gesac='.$_POST['field_37'].' order by estabelecimento';
+    		$rs = mysql_query($sql);
+    		if (mysql_fetch_array($rs)==0) {
+      			$bp->signup->errors['field_37'] = 'Código Gesac inválido. Insira novamente.';
+    		}
+  		}
+	}
+	add_action ('bp_signup_validate', 'fg_validate_custom_profile_fields');
+
+
+
     // Adiciona as funcionalidades do wordpress 3.0
     add_theme_support( 'nav-menus' );
     
