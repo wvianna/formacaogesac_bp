@@ -2333,3 +2333,7 @@ div#general div#content div.widget_activity li.load-more
 	border:none;
 	text-indent:-999em;
 }
+
+/* Desquebrando layout do register */
+.customField { clear:both; }
+
