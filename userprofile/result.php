@@ -1,6 +1,6 @@
 <?php
 /** Sets up the WordPress Environment. */
-require( dirname(__FILE__) . '/wp-load.php' );
+require( dirname(__FILE__) . '../../../../../wp-load.php' );
 
 $uf = $_POST["estado"];
 $sql = "select * from wp_gesac_ponto where uf = '$uf' order by municipio, estabelecimento;";
