@@ -45,7 +45,7 @@
   		global $bp;
   		/*Verifica se o valor inserido no campo endereço é um número de um ponto válido*/
   		if ($_POST['field_37']!='') {
-    		$sql = 'select * from wp_pontogesac where gesac='.$_POST['field_37'].' order by estabelecimento';
+    		$sql = 'select * from wp_gesac_ponto where gesac='.$_POST['field_37'].' order by estabelecimento';
     		$rs = mysql_query($sql);
     		if (mysql_fetch_array($rs)==0) {
       			$bp->signup->errors['field_37'] = 'Código Gesac inválido. Insira novamente.';
