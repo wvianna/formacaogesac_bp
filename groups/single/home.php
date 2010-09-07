@@ -1,11 +1,10 @@
 <?php get_header() ?>
-
-	<div id="content">
-
-    	<div class="middle">
-            <div class="main">
-                <div class="marginRight20 single">
-                    <?php if ( bp_has_groups() ) : while ( bp_groups() ) : bp_the_group(); ?>
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+    <div class="single">
+      <?php if ( bp_has_groups() ) : while ( bp_groups() ) : bp_the_group(); ?>
         
                     <?php do_action( 'bp_before_group_home_content' ) ?>
         
@@ -68,11 +67,14 @@
                     <?php do_action( 'bp_after_group_home_content' ) ?>
         
                     <?php endwhile; endif; ?>
-                </div>
-            </div><!-- .main -->
-            
-            <?php locate_template( array( 'sidebar.php' ), true ) ?>
-        </div><!-- .middle -->
-	</div><!-- #content -->
+    </div>
+    </div>
+    </div>
 
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
 <?php get_footer() ?>

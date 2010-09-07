@@ -1,17 +1,14 @@
-<?php get_header() ?>
-    
-    <div id="content" class="posts-list">
-    	<div class="middle">
-            <div class="main">
-            	<div class="marginRight20">
-                	<h1>Erro 404. Página não encotrada.</h1>
+<?php get_header (); ?>
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+      <h1>Erro 404. Página não encontrada.</h1>
                     <p>Tente outros termos!</p>
-                </div>
-            </div>
-            
-			<?php locate_template( array( 'sidebar.php' ), true ) ?>
-            <div class="clear"></div>
-        </div>
     </div>
-            
-<?php get_footer() ?>
+    </div>
+    <div id="right-column" class="grid_3">
+      <?php locate_template( array( 'sidebar.php' ), true ) ?>
+    </div>
+    <div class="clear"></div>
+</div>
+<?php get_footer (); ?>

@@ -32,8 +32,8 @@ _____________________________________________*/
     text-decoration:none;
 }
 .groups div.main div#item-header div#groupbutton-1{
-    position:absolute;
-    right:0;
+/*    position:absolute;
+    right:0; */
     top:13px;
 }
 .groups div.main div#item-header div.highlight{
@@ -212,8 +212,8 @@ _____________________________________________*/
 }
 .groups div.main div.mod{
 	position:absolute;
-	right:0;
-	top:6px;
+	right:12px;
+	top:1em;
 }
 .groups div.main div.mod h3{
 	color:#3f3f3f;

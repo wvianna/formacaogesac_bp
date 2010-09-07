@@ -4,10 +4,10 @@
 *  Author e-mail: marcos@creativemarkup.com.br
 *
 _____________________________________________*/
-
+/*
 div#content div.main div.single div.pagination{
-	margin:0 -6px;
-}
+	margin:0 -10px;
+} */
 
 /* Home Members */
 #content div.main div#item-header{
@@ -131,7 +131,7 @@ div#content div.main div.single div#item-buttons div{
 div#content div.main div.single div.action div.meta
 , .groups div.main div.action div.meta{
 	color:#666;
-	font-size:1.1em;
+	/* font-size:1.1em; */
 }
 div#content div.main div.single div#item-buttons div a
 , .groups div.main div.group-button a
@@ -139,20 +139,20 @@ div#content div.main div.single div#item-buttons div a
 , .friends div.main div.generic-button a
 , .friends div.main div.action a.accept
 , .friends div.main div.action a.reject{
-    -moz-border-radius:2px;
-    -webkit-border-radius:2px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
     background-color:#fff;
-    border:1px solid #a2a2aa;
-    color:#4a4a4a;
+    border:1px solid #bbb;
+    color:#333;
 	clear:right;
     cursor:pointer;
 	display:inline;
 	float:right;
-    font-size:1.2em;
+    /* font-size:1.2em; */
     font-weight:bold;
 	margin-bottom:3px;
 	text-decoration:none;
-    padding:3px 7px 3px 27px;
+    padding:1px 18px 1px 35px;
 }
 div#content div.main div.single div#item-buttons div a:hover
 , .groups div.main div.group-button a:hover
@@ -170,20 +170,20 @@ div#content div.main div.single div#item-buttons div.friendship-button a
 , .friends div.main div.generic-button a.requested
 , .friends div.main div.action a.accept
 , .groups div.main a.request-membership{
-	background:#fff url('../img/bt/bt_addFriend.png') 7px center no-repeat;
+	background:#fff url('../img/bt/bt_addFriend.png') 16px center no-repeat;
 }
 div#content div.main div.single div#item-buttons div.friendship-button a.remove
 , .groups div.main div.group-button a.leave-group
 , .directory div.main div.generic-button a.remove
 , .friends div.main div.generic-button a.remove
 , .friends div.main div.action a.reject{
-	background:#fff url('../img/bt/bt_removeFriend.png') 7px center no-repeat;
+	background:#fff url('../img/bt/bt_removeFriend.png') 16px center no-repeat;
 }
 div#content div.main div.single div#item-buttons div#post-mention a{
-	background:#fff url('../img/bt/bt_mention.jpg') 7px center no-repeat;
+	background:#fff url('../img/bt/bt_mention.jpg') 16px center no-repeat;
 }
 div#content div.main div.single div#item-buttons div#send-private-message a{
-	background:#fff url('../img/bt/bt_sendMsg.jpg') 7px center no-repeat;
+	background:#fff url('../img/bt/bt_sendMsg.jpg') 16px center no-repeat;
 }
 
 /* Profile */

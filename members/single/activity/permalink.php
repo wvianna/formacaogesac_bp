@@ -1,13 +1,14 @@
 <?php get_header() ?>
-
-	<div id="content">
-
-		<script type="text/javascript">
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_11">
+    
+    <script type="text/javascript">
 			jQuery( 'div#content' ).hide();
 		</script>
-
-    	<div class="middle">
-            <div class="activity no-ajax">
+		
+    <div id="pageContent" class="main">
+		            <div class="activity no-ajax">
                 <?php if ( bp_has_activities( 'display_comments=threaded&include=' . bp_current_action() ) ) : ?>
 
                     <ul id="activity-stream" class="activity-list item-list">
@@ -93,7 +94,10 @@
                     </ul>
                 <?php endif; ?>
             </div>
-		</div>
     </div>
-    
+    </div>
+
+  <div class="clear"></div>
+  </div>
+            
 <?php get_footer() ?>

@@ -1,13 +1,11 @@
 <?php /* This template is only used on multisite installations */ ?>
 
-<?php get_header(); ?>
-
-	<div id="content">
-
-		<div class="middle">
-    		<div class="main">
-                <div class="marginRight20">
-					<?php do_action( 'bp_before_activation_page' ) ?>
+<?php get_header() ?>
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+    <?php do_action( 'bp_before_activation_page' ) ?>
             
                     <div class="page" id="activate-page">
             
@@ -51,11 +49,13 @@
                     </div><!-- .page -->
             
                     <?php do_action( 'bp_after_activation_page' ) ?>
-		        </div>
-    		</div><!-- .main -->
+    </div>
+    </div>
 
-    		<?php locate_template( array( 'sidebar.php' ), true ) ?>
-		</div><!-- .middle -->
-	</div><!-- #content -->
-
-<?php get_footer(); ?>
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
+<?php get_footer() ?>

@@ -5,31 +5,17 @@
 *
 _____________________________________________*/
 
-body.directory div#content div.main form#whats-new-form
-, body.directory div#content div.main input#aw-whats-new-submit{
-	float:none;
-	margin:0;
-}
-body.directory div#content div.main form form{
-	margin-right:0;
-}
-.activity div#content div.main h1
-, body.directory div#content div.main form h1
-, .group-create div#content div.main h1
-, .create div#content div.main h1{
-    color:#017BAE;
-    display:inline;
-    font-size:2.4em;
-	font-weight:bold;
-    float:left;
-	letter-spacing:-1px;
-}
+body.directory div#content div.main form#whats-new-form,
+body.directory div#content div.main input#aw-whats-new-submit{float:none;margin:0;}
+
+body.directory div#content div.main form form{margin-right:0;}
+
 .activity div#content div.main h1 .button
 , body.directory div#content div.main form h1 .button
 , .group-create div#content div.main h1 .button
 , .create div#content div.main h1 .button{
 	color:#666666;
-	font-size:0.8em;
+	font-size:0.5em;
 	font-weight:normal;
 	letter-spacing:0;
 	text-decoration:none;
@@ -40,10 +26,10 @@ body.directory div#content div.main form form{
 , .group-create div#content div.main h1 .button:hover
 , .create div#content div.main h1 .button:hover{
 	text-decoration:underline;
-}
+} /*
 .activity div#content div.main h1{
 	margin-bottom:15px;
-}
+} */
 body.directory div#content div.main div.item-desc
 , body.groups div#content div.main div.item-desc{
     margin-top:5px;
@@ -69,7 +55,7 @@ body.directory div#content div.main div.item-desc
     color:#3f3f3f;
 }
 #content div.main ul.item-list li div.item a{
-	font-size:1.3em;
+	font-size:1.1em;
 	font-weight:bold;
     text-transform:capitalize;
     text-decoration:none;
@@ -78,7 +64,7 @@ body.directory div#content div.main div.item-desc
     text-decoration:underline;
 }
 #content div.main ul.item-list li div.item span.update{
-	font-size:1.2em;
+	font-size:1.1em;
 }
 #content div.main ul.item-list li div.item span.update a{
 	font-size:1em;
@@ -90,11 +76,11 @@ body.directory div#content div.main div.item-desc
 	width:auto;
 }
 #content div.main ul.item-list li div.item-meta{
-    margin-top:15px;
+    /* margin-top:15px; */
 }
 #content div.main ul.item-list li div.item-meta span.activity{
     color:#999;
-	font-size:1.1em;
+	/* font-size:1.1em; */
 }
 body.blogs div#content div.main ul.item-list li div.item-meta{
     margin-top:0;

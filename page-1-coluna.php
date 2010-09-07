@@ -2,20 +2,21 @@
 
 <?php get_header(); ?>
 
-<div id="content" class="clear one-column">
-	<div class="middle">
-        <div class="main">
-        	<div class="marginRight20">
-                <h1><?php the_title(); ?></h1>
-                
-                <div class="postContent">
-                    <?php the_content(); ?>
-                </div>
-            </div>
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_11">
+    <div id="pageContent" class="main">
+
+        <h1><?php the_title(); ?></h1>  
+        <div class="postContent">
+          <?php the_content(); ?>
         </div>
-       
-        <div class="clear"></div>
+
     </div>
-</div>	
+    </div>
+
+   <div class="clear"></div>
+  </div>
 	
 <?php get_footer(); ?>
+
+

@@ -1,13 +1,12 @@
 <?php get_header() ?>
+<?php do_action( 'bp_before_directory_forums_content' ) ?>
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
 
-	<?php do_action( 'bp_before_directory_forums_content' ) ?>
 
-	<div id="content">
-
-		<div class="middle">
-			<div class="main">
-            	<div class="marginRight20">
-                <form action="" method="post" id="forums-search-form" class="dir-form">
+<form action="" method="post" id="forums-search-form" class="dir-form">
                     <h1><?php _e( 'Group Forums Directory', 'buddypress' ) ?><?php if ( is_user_logged_in() ) : ?> &nbsp;<a class="button" href="#new-topic" id="new-topic-button">(<?php _e( 'New Topic', 'buddypress' ) ?>)</a><?php endif; ?></h1>
         
                     <div id="forums-dir-search" class="dir-search">
@@ -104,11 +103,17 @@
                     <?php do_action( 'bp_after_directory_forums_content' ) ?>
         
                 </form>
-                </div>
-			</div><!-- .main -->
-            
-			<?php locate_template( array( 'sidebar.php' ), true ) ?>
-		</div><!-- .middle -->
-	</div><!-- #content -->
 
+
+
+
+    </div>
+    </div>
+
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
 <?php get_footer() ?>

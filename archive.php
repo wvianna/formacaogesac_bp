@@ -1,10 +1,8 @@
-<?php get_header() ?>
-    
-    <div id="content" class="posts-list">
-    	<div class="middle">
-            <div class="main">
-            	<div class="marginRight20">
-                <?php $query = $wp_query; if( $query->have_posts() ) : ?>
+<?php get_header (); ?>
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+                      <?php $query = $wp_query; if( $query->have_posts() ) : ?>
 					<?php if(is_category()) : ?>
                         <h1>Posts da categoria "<?php single_cat_title(); ?>"</h1>
                     <?php elseif(is_tag()) : ?>
@@ -49,12 +47,11 @@
                 	<h1>Nada encotrado.</h1>
                     <p>Tente outros termos!</p>
                 <?php endif; ?>
-                </div>
-            </div>
-            
-			<?php locate_template( array( 'sidebar.php' ), true ) ?>
-            <div class="clear"></div>
-        </div>
     </div>
-            
-<?php get_footer() ?>
+    </div>
+    <div id="right-column" class="grid_3">
+      <?php locate_template( array( 'sidebar.php' ), true ) ?>
+    </div>
+    <div class="clear"></div>
+</div>
+<?php get_footer (); ?>

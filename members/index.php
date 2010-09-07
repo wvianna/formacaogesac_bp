@@ -1,11 +1,9 @@
 <?php get_header() ?>
-
-	<div id="content">
-        
-		<div class="middle">
-            <div class="main">
-            	<div class="marginRight20">
-		        <form action="" method="post" id="members-directory-form" class="dir-form">
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+      <form action="" method="post" id="members-directory-form" class="dir-form">
 
 			        <h1><?php _e( 'Members Directory', 'buddypress' ) ?></h1>
 
@@ -53,11 +51,13 @@
 			        <?php do_action( 'bp_after_directory_members_content' ) ?>
 
 		        </form><!-- #members-directory-form -->
-                </div>
-            </div><!-- .main -->
-            
-            <?php locate_template( array( 'sidebar.php' ), true ) ?>
-		</div><!-- .middle -->
-	</div><!-- #content -->
+    </div>
+    </div>
 
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
 <?php get_footer() ?>

@@ -28,46 +28,38 @@
     
     <body <?php body_class() ?>>
         <div id="general">
-            <div id="header">
-                <div class="middle">
-                	<div class="tit">
-                    	<?php if(is_single() || is_page()) : ?>
-                        <h2 class="title">
-                        	<a href="<?php echo site_url() ?>" title="<?php bp_site_name() ?>"><?php bp_site_name() ?></a>
-                        </h2>
-                        <?php else : ?>
-                        <h1 class="title">
-                        	<a href="<?php echo site_url() ?>" title="<?php bp_site_name() ?>"><?php bp_site_name() ?></a>
-                        </h1>
-                        <?php endif; ?>
-                        <ul class="displayNone">
-                            <li><a href="#navMenu">Pular para o menu de navegação</a></li>
-                        	<li><a href="#content">Pular para o conteúdo</a></li>
-                            <li><a href="#footer">Pular para o footer</a></li>
-                        </ul>
-					</div>
-                    
-			        <div class="search">
+
+<ul class="displayNone">
+<li><a href="#navigation">Pular para o menu de navegação</a></li>
+<li><a href="#content">Pular para o conteúdo</a></li>
+<li><a href="#footer">Pular para o rodapé</a></li>
+</ul>
+
+	<div id="headerbr">
+		<div class="mclogo"><img src="<?php bloginfo('template_url');?>/global/img/comunicacoes_logo.png" alt="Comunicações - Ministério das Comunicações" title="Comunicações - Ministério das Comunicações" class="comunicacoes" /></div>
+		<div class="brasillogo"><!-- <img src="++resource++gesac.theme.images/imgLogoBrasil.gif" alt="Brasil - Um País de todos" title="Brasil - Um País de todos" height="35" width="105"> --></div>
+    </div>
+	<div id="header">
+	<div class="container_11">
+    	<a href="<?php echo site_url() ?>" title="<?php bp_site_name() ?>" id="logo"><img src="<?php bloginfo('template_url');?>/global/img/logo.png" alt="<?php bloginfo('title')?>" /></a>
+		<div id="top_right">	
                         <form action="<?php echo bp_search_form_action() ?>" method="post" id="search-form">
-                            <label for="search-terms">Pesquisar:</label>
                             <input type="text" id="search-terms" class="inputDefault" name="search-terms" value="o que proucura?" />
                             <?php echo bp_custom_search_form_type_select() ?>
                             <input type="submit" name="search-submit" id="search-submit" class="submitDefault" value="buscar" />
                             <?php wp_nonce_field( 'bp_search_form' ) ?>
                         </form>
-                        <div class="clear"></div>
-			        </div>
-                    
-                    <div class="acc">
-                        <strong class="displayNone">Controle do tamanho da fonte</strong>
-               	        <a href="#" title="Reduzir a fonte" class="fontMinus">A-</a>
-                       	<a href="#" title="Almentar a fonte" class="fontPlus">A+</a>
-                    </div>
-				</div>		
-			
-			    <div class="menu">
-		            <div class="middle" id="navMenu">
-                        <?php if( function_exists('wp_nav_menu') ) : ?>
+			<div id="acessibilidade">
+				<a href="#"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-mais.gif" alt="Aumentar letra" /></a>
+				<a href="#"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-menos.gif" alt="Diminuir letra" /></a>
+			</div>
+		</div>
+  </div>
+  </div>
+
+    <div id="navigation">
+    <div id="container_nav">
+       <?php if( function_exists('wp_nav_menu') ) : ?>
                             <?php wp_nav_menu( array( 'menu_class' => 'nav', 'container' => '', 'fallback_cb' => 'header_menu', 'theme_location' => 'header-nav' ) ); ?>
                         <?php else : header_menu(); endif; ?>
                         
@@ -100,8 +92,5 @@
                                 </li>
                             <?php endif; ?>
                         </ul>
-		            </div>
-                    <div class="clear"></div>
-			    </div>
-            </div>
-
+                    </div>
+                    </div>

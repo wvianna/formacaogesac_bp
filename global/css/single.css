@@ -8,14 +8,6 @@ _____________________________________________*/
 /* > Single & page
 ____________________________________*/
 
-.single #general #content div.main h1
-, .page #general #content div.main h1{
-	color:#017bae;
-	font-size:2.4em;
-	font-weight:bold;
-	letter-spacing:-1px;
-}
-
 .single #general #content div.main div.author
 , .page #general #content div.main div.author{
 	background:#f7f7f7;
@@ -58,9 +50,11 @@ ____________________________________*/
 	margin-top:5px;
 }
 
+/*
+
 #general #content div.main div.postContent{
 	clear:both;
-}
+} */
 
 /* > Single comments
 ____________________*/
@@ -322,13 +316,15 @@ ____________________*/
 /* > Archive & search
 _________________________*/
 
+
+/* 
 .posts-list div.main h1{
 	color:#017BAE;
 	font-size:2.4em;
 	font-weight:bold;
 	letter-spacing:-1px;
 	margin-bottom:10px;
-}
+} */
 
 .posts-list div.main ul.posts{
 	margin:15px 0;
@@ -399,6 +395,8 @@ _________________________*/
 /* Post Content.css
 _______________________*/
 
+/*
+
 .postContent{
 	color:#333;
 }
@@ -442,7 +440,7 @@ _______________________*/
 	line-height:110%;
 	margin:0.7em 0 0.2em;
 	text-shadow:1px 1px 1px #fff;
-}
+} */
 
 .postContent h4{
 	font-size:140%;
@@ -480,6 +478,8 @@ _______________________*/
 	text-decoration:underline;
 }
 
+/*
+
 .postContent ul
 , .postContent ol{
 	line-height:150%;
@@ -503,6 +503,8 @@ _______________________*/
 	list-style-type:decimal;
 }
 
+*/
+
 .postContent fieldset{
 	background-color:#fff;
 	border:1px solid #ddd;
@@ -519,6 +521,7 @@ _______________________*/
 	text-transform:uppercase;
 }
 
+/*
 .postContent input
 , .postContent textarea
 , .postContent select{
@@ -536,7 +539,7 @@ _______________________*/
 	background-color:#fff;
 	padding:2px;
 }
-
+*/
 .postContent table{
 	margin:0.5em 0 1em;
 }

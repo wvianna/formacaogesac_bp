@@ -1,11 +1,8 @@
 <?php get_header() ?>
-
-	<div id="content">
-
-		<div class="middle">
-    		<div class="main">
-				<div class="marginRight20">
-			    <?php if ( !is_user_logged_in() ) : ?>
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+<?php if ( !is_user_logged_in() ) : ?>
 				    <h1><?php _e( 'Site Activity', 'buddypress' ) ?></h1>
 			    <?php endif; ?>
 
@@ -91,11 +88,13 @@
 			    </div><!-- .activity -->
 
 			    <?php do_action( 'bp_after_directory_activity_content' ) ?>
-                </div>
-            </div><!-- .main -->
+    </div>
+    </div>
 
-           	<?php locate_template( array( 'sidebar.php' ), true ) ?>
-		</div><!-- .middle -->
-	</div><!-- #content -->
-
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
 <?php get_footer() ?>

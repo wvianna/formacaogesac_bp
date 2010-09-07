@@ -1,11 +1,9 @@
 <?php get_header() ?>
-
-	<div id="content">
-
-		<div class="middle">
-    		<div class="main">
-				<div class="marginRight20">
-		        <form action="" method="post" id="groups-directory-form" class="dir-form">
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+		<form action="" method="post" id="groups-directory-form" class="dir-form">
 			        <h1><?php _e( 'Groups Directory', 'buddypress' ) ?><?php if ( is_user_logged_in() ) : ?> &nbsp;<a class="button" href="<?php echo bp_get_root_domain() . '/' . BP_GROUPS_SLUG . '/create/' ?>">(<?php _e( 'Create a Group', 'buddypress' ) ?>)</a><?php endif; ?></h1>
 
 			        <?php do_action( 'bp_before_directory_groups_content' ) ?>
@@ -50,11 +48,13 @@
 		        </form><!-- #groups-directory-form -->
 
 		        <?php do_action( 'bp_after_directory_groups_content' ) ?>
-                </div>
-            </div><!-- .main -->
+    </div>
+    </div>
 
-           	<?php locate_template( array( 'sidebar.php' ), true ) ?>
-		</div><!-- .middle -->
-	</div><!-- #content -->
-
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
 <?php get_footer() ?>

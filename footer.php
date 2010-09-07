@@ -99,35 +99,30 @@
 </div> -->
 
 
-<div id="footer">
-    <div class="middle">
-        <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li class=""><a href="<?php echo site_url() ?>/faqs/" title="FAQs">FAQs</a></li>
-            <li class=""><a href="<?php echo site_url() ?>/termo-de-uso/" title="Termos de uso">Termos de uso</a></li>
-            <li class=""><a href="<?php echo site_url() ?>/quem-faz/" title="Quem Faz">Quem Faz</a></li>
-        </ul>
-
+   <div id="footer">
+   <div class="container_11">
+   		<div class="grid_4">
+            <a href="#">Início</a> •
+            <a href="<?php echo site_url() ?>/faqs/" title="FAQs">FAQs</a> •
+            <a href="<?php echo site_url() ?>/termo-de-uso/" title="Termos de uso">Termos de uso</a> •
+            <a href="<?php echo site_url() ?>/quem-faz/" title="Quem Faz">Quem Faz</a>
+		</div>
+		<div class="grid_4" style="text-align:center">
         <p class="text"><a href="http://www.mc.gov.br/">Ministério das Comunicações</a> - Alguns direitos reservados.</p>
- 
-        <p class="links">
-          <a href="http://www.w3.org/" title="www.w3.org">
-            <img src="<?php bloginfo('template_url');?>/global/img/graph/graph_w3c.png" alt="www.w3.org" />
-          </a> 
-          <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/br/" title="www.creativecommons.org">
-            <img src="<?php bloginfo('template_url');?>/global/img/graph/graph_cc.png" alt="www.creativecommons.org" />
-         </a>
-         <a href="http://www.wordpress.org/" title="www.wordpress.org">
-           <img src="<?php bloginfo('template_url');?>/global/img/graph/graph_wp.png" alt="www.wordpress.org" />
-         </a>
-        </p>
+		</div>
+		<div class="grid_3" style="text-align:right">
+          <a href="http://www.w3.org/"><img src="<?php bloginfo('template_url');?>/global/img/graph/graph_w3c.png" alt="www.w3.org" /></a>
+          <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/br/" title="Creative Commons BY-NC-SA"><img src="<?php bloginfo('template_url');?>/global/img/graph/graph_cc.png" alt="www.creativecommons.org" /></a>
+         <a href="http://www.wordpress.org/"><img src="<?php bloginfo('template_url');?>/global/img/graph/graph_wp.png" alt="www.wordpress.org" /></a>
+        </div>
         <div class="clear"></div>
-    </div>
-</div>
-
-
-
+	</div>
+	</div>
+	
 <a href="#top" id="top-link">Topo</a>
+
+<!-- general -->
+	</div>
         
 <?php do_action( 'bp_footer' ) ?>
 <?php wp_footer(); ?>

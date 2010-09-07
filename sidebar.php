@@ -1,4 +1,4 @@
-<div class="sidebar">
+<div class="sidebar" id="sidebar">
 	<?php if(has_active_widgets('right-column-1')) : ?>
     <div class="right-column right-column-1 tabs">
 		<?php tabbed_dynamic_sidebar('right-column-1'); ?>

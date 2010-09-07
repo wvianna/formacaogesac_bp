@@ -1,16 +1,15 @@
 <?php get_header() ?>
-
-	<div id="content">
-
-		<script type="text/javascript">
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    
+    <script type="text/javascript">
 			jQuery( 'div#content' ).hide();
 		</script>
-
-		<div class="middle">
-        	<div class="main">
-            	<div class="marginRight20">
-            
-                    <form action="<?php bp_group_creation_form_action() ?>" method="post" id="create-group-form" class="standard-form" enctype="multipart/form-data">
+    
+    <div id="pageContent" class="main">
+    
+    <form action="<?php bp_group_creation_form_action() ?>" method="post" id="create-group-form" class="standard-form" enctype="multipart/form-data">
                         <h1><?php _e( 'Create a Group', 'buddypress' ) ?> &nbsp;<a class="button" href="<?php echo bp_get_root_domain() . '/' . BP_GROUPS_SLUG . '/' ?>">(diretório de grupos)</a></h1>
             
                         <?php do_action( 'bp_before_create_group' ) ?>
@@ -259,11 +258,14 @@
                         <?php do_action( 'bp_after_create_group' ) ?>
             
                     </form>
-                </div>
-			</div><!-- .main -->
-            
-            <?php locate_template( array( 'sidebar.php' ), true ) ?>
-		</div><!-- .middle -->
-	</div><!-- #content -->
+    
+    </div>
+    </div>
 
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
 <?php get_footer() ?>

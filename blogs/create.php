@@ -1,17 +1,15 @@
 <?php get_header() ?>
+<?php do_action( 'bp_before_directory_groups_content' ) ?>
 
-	<?php do_action( 'bp_before_directory_groups_content' ) ?>
-
-	<div id="content">
-
-		<script type="text/javascript">
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    
+    <script type="text/javascript">
 			jQuery( 'div#content' ).hide();
 		</script>
-
-		<div class="middle">
-        	<div class="main">
-            	<div class="marginRight20">            
-                    <?php do_action( 'template_notices' ) ?>
+    
+    <div id="pageContent" class="main">
+      <?php do_action( 'template_notices' ) ?>
             
                     <h1><?php _e( 'Create a Blog', 'buddypress' ) ?> &nbsp;<a class="button" href="<?php echo bp_get_root_domain() . '/' . BP_BLOGS_SLUG . '/' ?>">(<?php _e( 'Blogs Directory', 'buddypress' ) ?>)</a></h1>
             
@@ -30,14 +28,16 @@
                     <?php endif; ?>
             
                     <?php do_action( 'bp_after_create_blog_content' ) ?>
-        		</div>
-            </div><!-- .main -->
+    </div>
+    </div>
+
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+  
+  <?php do_action( 'bp_after_directory_groups_content' ) ?>
             
-           	<?php locate_template( array( 'sidebar.php' ), true ) ?>
-		</div><!-- .middle -->
-	</div><!-- #content -->
-
-	<?php do_action( 'bp_after_directory_groups_content' ) ?>
-
 <?php get_footer() ?>
 

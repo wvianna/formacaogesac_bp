@@ -1,11 +1,10 @@
 <?php get_header() ?>
-
-	<div id="content">
-
-		<div class="middle">
-		    <div class="main">
-                <div class="marginRight20 single">
-                    <?php do_action( 'bp_before_member_home_content' ) ?>
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+    <div class="single">
+    	<?php do_action( 'bp_before_member_home_content' ) ?>
     
                     <div id="item-header">
                         <?php locate_template( array( 'members/single/member-header.php' ), true ) ?>
@@ -49,11 +48,12 @@
                     </div><!-- #item-body -->
     
                     <?php do_action( 'bp_after_member_home_content' ) ?>
-                </div>
-            </div><!-- .main -->
-            
-            <div class="sidebar">
-				<?php if(has_active_widgets('members-column-1')) : ?>
+    </div>
+    </div>
+    </div>
+
+   <div id="right-column" class="grid_3 sidebar">
+     <?php if(has_active_widgets('members-column-1')) : ?>
                 <div class="right-column right-column-1 tabs">
                     <?php tabbed_dynamic_sidebar('members-column-1'); ?>
                 </div>
@@ -67,10 +67,9 @@
                 <div class="right-column right-column-3 tabs">
                     <?php tabbed_dynamic_sidebar('members-column-3'); ?>
                 </div>
-				<?php endif; ?>
-            </div>
-		</div><!-- .middle -->
-	</div><!-- #content -->
-
-
+		<?php endif; ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
 <?php get_footer() ?>

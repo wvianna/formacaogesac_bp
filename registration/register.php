@@ -1,11 +1,9 @@
 <?php get_header() ?>
-
-	<div id="content">
-
-		<div class="middle">
-    		<div class="main">
-                <div class="marginRight20">
-		            <?php do_action( 'bp_before_register_page' ) ?>
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+<?php do_action( 'bp_before_register_page' ) ?>
 
 		            <div class="page" id="register-page">
 
@@ -289,14 +287,16 @@
 		            </div>
 
 		            <?php do_action( 'bp_after_register_page' ) ?>
-		        </div>
-    		</div><!-- .main -->
+    </div>
+    </div>
 
-    		<?php locate_template( array( 'sidebar.php' ), true ) ?>
-		</div><!-- .middle -->
-	</div><!-- #content -->
-
-	<?php do_action( 'bp_after_directory_activity_content' ) ?>
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
+  <?php do_action( 'bp_after_directory_activity_content' ) ?>
 
 	<script type="text/javascript">
 		jQuery(document).ready( function() {
@@ -308,5 +308,5 @@
 			});
 		});
 	</script>
-
+            
 <?php get_footer() ?>

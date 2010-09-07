@@ -1,11 +1,9 @@
 <?php get_header() ?>
-
-	<div id="content">
-
-		<div class="middle">
-    		<div class="main">
-			<div class="marginRight20">
-		    <form action="" method="post" id="blogs-directory-form" class="dir-form">
+    
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_8">
+    <div id="pageContent" class="main">
+      <form action="" method="post" id="blogs-directory-form" class="dir-form">
 
 			    <h1><?php _e( 'Blogs Directory', 'buddypress' ) ?><?php if ( is_user_logged_in() && bp_blog_signup_enabled() ) : ?> &nbsp;<a class="button" href="<?php echo bp_get_root_domain() . '/' . BP_BLOGS_SLUG . '/create/' ?>">(<?php _e( 'Create a Blog', 'buddypress' ) ?>)</a><?php endif; ?></h1>
 
@@ -48,11 +46,13 @@
 			    <?php wp_nonce_field( 'directory_blogs', '_wpnonce-blogs-filter' ) ?>
 
 		    </form><!-- #blogs-directory-form -->
-		    </div>
-    		</div><!-- .main -->
+    </div>
+    </div>
 
-        	<?php locate_template( array( 'sidebar.php' ), true ) ?>
-		</div><!-- .middle -->
-	</div><!-- #content -->
-
+   <div id="right-column" class="grid_3">
+     <?php locate_template( array( 'sidebar.php' ), true ) ?>
+   </div>
+  <div class="clear"></div>
+  </div>
+            
 <?php get_footer() ?>
