@@ -1,10 +1,10 @@
 <?php include '../../../../../wp-blog-header.php'; ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" >
 	<head>
-		<!--<link type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/global/css/map.css" rel="stylesheet" media="screen" />-->
-		<script type="text/javascript" src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAr8Ex0a8JdgIWrpZCiXV-6RS0vQwC41RQAC1GAJ9qQ-ExVVli_BSv6B-LnAI91nvgzt0ExM-waT43pg"></script>
-		<script type="text/javascript">
+		
+        <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAAH5PGevezcuY7xvrr6FYrrRS3wvbRNFOuUY_Eo4TRJP_DiSxpiBRNN2Cz-pEjICA1GB6Siaaoz8sR5w" type="text/javascript"></script>
+
+        <script type="text/javascript">
 			var map;
 			var marker;
 			var member;
