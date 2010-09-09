@@ -41,9 +41,9 @@
 	}
 	add_action ('bp_after_signup_profile_fields', 'fg_custom_profile_fields');
 
-	function fg_validate_custom_profile_fields () {
+/*	function fg_validate_custom_profile_fields () {
   		global $bp;
-  		/*Verifica se o valor inserido no campo endereço é um número de um ponto válido*/
+  		//Verifica se o valor inserido no campo endereço é um número de um ponto válido//
   		if ($_POST['field_37']!='') {
     		$sql = 'select * from wp_gesac_ponto where gesac='.$_POST['field_37'].' order by estabelecimento';
     		$rs = mysql_query($sql);
@@ -53,7 +53,7 @@
   		}
 	}
 	add_action ('bp_signup_validate', 'fg_validate_custom_profile_fields');
-
+*/
 
 
     // Adiciona as funcionalidades do wordpress 3.0
