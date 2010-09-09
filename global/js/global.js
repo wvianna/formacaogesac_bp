@@ -247,7 +247,7 @@ jQuery(function()
 				}
 				else
 				{
-					document.location.href = 'http://'+ document.location.host + '/members/' + jQuery('div.widget_login div.login input').val();
+					document.location.href = 'http://'+ document.location.host + '/wp/members/' + jQuery('div.widget_login div.login input').val();
 				}
 			});
 		}
