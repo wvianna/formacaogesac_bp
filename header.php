@@ -85,7 +85,7 @@
                  
 							<?php if ( bp_is_active( 'activity' ) ) : ?>
                                 <li<?php if ( bp_is_page( BP_ACTIVITY_SLUG ) ) : ?> class="selected"<?php endif; ?>>
-                                    <a href="<?php echo site_url() ?>/<?php echo BP_ACTIVITY_SLUG ?>/" title="<?php _e( 'Activity', 'buddypress' ) ?>">Fluxo de atividades</a>
+                                    <a href="<?php echo site_url() ?>/<?php echo BP_ACTIVITY_SLUG ?>/" title="<?php _e( 'Activity', 'buddypress' ) ?>">Últimos Posts</a>
                                 </li>
                             <?php endif; ?>
                         </ul>
