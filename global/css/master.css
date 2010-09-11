@@ -368,32 +368,38 @@ form#search-form input#search-terms{
 #content h1 { margin-top:.5em; color: #0091D2; font-size:2em}
 #content h2 { font-size:1.4em !important; color:#0091D2 !important; margin-bottom:.6em !important; }
 #content h3 { font-size: 1.1em; color:#38464C; margin-bottom:.6em; }
-#content ul { list-style: inside url("../img/bullet.gif"); line-height:2em; }
+#content ul { list-style: inside url("../img/bullet.gif"); /* line-height:2em; */ }
 .date, .time-since, .view, .item-button {color: #999; font-size:.8em;}	
 #content li {list-style:none none}
-#content .alignleft {clear:both; float:left; margin:.2em 1em 0 0; display:block;}
-#content .alignleft .wp-caption-text {text-align:left;}
-#content .alignright {clear:both; float:right; margin:.2em 0 0 1em; display:block;}
-#content .alignright .wp-caption-text {text-align:right;}
-#content .aligncenter {text-align:center; margin:1em 0; display:block; clear:both; margin-left:auto; margin-right:auto;}
-#content .aligncenter .wp-caption-text {text-align:left;}
-#content .aligncenter img, #content .alignright img, #content .alignleft img {background:url("../img/bg_body.gif") repeat-x 0 100%; padding:5px 0;}
+.alignleft, .align-right {clear:both; float:left; margin:.2em 1em 0 0; display:block;}
+.alignleft .wp-caption-text, .align-right .wp-caption-text {text-align:left;}
+.alignright, .align-left  {clear:both; float:right; margin:.2em 0 0 1em; display:block;}
+.alignright .wp-caption-text, .align-left .wp-caption-text {text-align:right;}
+.aligncenter, .align-center {text-align:center; margin:1em 0; display:block; clear:both; margin-left:auto; margin-right:auto;}
+.aligncenter .wp-caption-text, .align-center .wp-caption-text {text-align:left;}
+.aligncenter img,
+.alignright img,
+.alignleft img,
+.align-center img,
+.align-right img,
+.align-left img {background:url("../img/bg_body.gif") repeat-x 0 100%; padding:5px 0;}
 .wp-caption-text { color:#666; font-size:.85em; padding-left:5px;}
+.align-left {clear:right;}
 
-#content div.tabs
-, #content div.main div.single div#item-nav
-, #content div.main div.single div#item-body{
-    -moz-box-shadow:0px 0px 11px #EFEFEF;
-	-moz-border-radius:4px;
-	-webkit-border-top:4px;
-    -webkit-box-shadow:1px 1px 2px #EFEFEF;
-	border:1px solid #ECE9E9;
-    box-shadow:1px 1px 2px #EFEFEF;
+div.tabs
+, div.single div#item-nav
+, div.single div#item-body{
+    /* -moz-box-shadow:0px 0px 11px #EFEFEF; */
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+    /* -webkit-box-shadow:1px 1px 2px #EFEFEF; */
+	border:1px solid #eee;
+    /* box-shadow:1px 1px 2px #EFEFEF; */
     margin-bottom:20px;
-	padding:.2em;
+	padding:.1em;
 }
 
-#content div.main div.single div#item-nav{
+div.single div#item-nav{
 	-moz-border-radius-bottomleft:0;
 	-moz-border-radius-bottomright:0;
 	-webkit-border-bottom-left:0;
@@ -402,7 +408,7 @@ form#search-form input#search-terms{
 	margin:10px 0 0;
 }
 
-#content div.main div.single div#item-body{
+div.single div#item-body{
 	-moz-border-radius-topleft:0;
 	-webkit-border-top-left-radius:0;
 	-moz-border-radius-topright:0;
@@ -412,10 +418,10 @@ form#search-form input#search-terms{
 	padding:1em 1em 9px;
 }
 
-#content div.main div.single div#item-body div.item-list-tabs{margin:0;}
-#content div.main div.single div#item-nav div.item-list-tabs ul{line-height:100%;}
-#content div.tabs div.widget{clear:both;overflow:hidden;padding:9px 10px;}
-#content div.tabs div.widget h2.widgettitle{display:none;}
+div.single div#item-body div.item-list-tabs{margin:0;}
+div.single div#item-nav div.item-list-tabs ul{line-height:100%;}
+div.tabs div.widget{clear:both;overflow:hidden;padding:9px 10px;}
+div.tabs div.widget h2.widgettitle{display:none;}
 
 /* start clearfix */
 ul.tabs:after{
@@ -440,8 +446,8 @@ ul.tabs{
 }
 /* end clearfix */
 
-#content div.tabs ul.tabs
-, #content div.main div.single div#item-nav div#object-nav{
+div.tabs ul.tabs
+, div.main div.single div#item-nav div#object-nav{
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	background:#f2f2f2;
@@ -452,8 +458,8 @@ ul.tabs{
 	line-height:1em;
 }
 
-#content div.tabs ul.tabs li
-, #content div.main div.single div#item-nav div#object-nav li{
+div.tabs ul.tabs li
+, div.single div#item-nav div#object-nav li{
 	-moz-border-radius-topleft:4px;
 	-webkit-border-top-left-radius:4px;
 	-moz-border-radius-topright:4px;
@@ -468,8 +474,8 @@ ul.tabs{
 	padding-bottom:1px;
 }
 
-#content div.tabs ul.tabs li a
-, #content div.main div.single div#item-nav div#object-nav li a{
+div.tabs ul.tabs li a
+, div.single div#item-nav div#object-nav li a{
 	color:#FFFFFF;
 	display:inline;
 	float:left;
@@ -480,14 +486,14 @@ ul.tabs{
 	padding:.5em 1em;
 }
 
-#content div.tabs div.ui-tabs-hide{
+div.tabs div.ui-tabs-hide{
 	display:none;
 }
 
-#content div.tabs ul.tabs li.ui-tabs-selected
-, #content div.tabs ul.tabs li.ui-tabs-current
-, #content div.main div.single div#item-nav div#object-nav ul li.selected
-, #content div.main div.single div#item-nav div#object-nav ul li.current{
+div.tabs ul.tabs li.ui-tabs-selected
+, div.tabs ul.tabs li.ui-tabs-current
+, div.main div.single div#item-nav div#object-nav ul li.selected
+, div.main div.single div#item-nav div#object-nav ul li.current{
 	border:1px solid #ece9e9;
 	background:#03374F;
 	color:#FFFFFF;
@@ -495,50 +501,66 @@ ul.tabs{
 	margin-top:1px;
 }
 
-#content div.tabs ul.tabs li a:hover,
-#content div.main div.single div#item-nav div#object-nav li a:hover{ text-decoration:underline;}
+div.tabs ul.tabs li a:hover,
+div.single div#item-nav div#object-nav li a:hover{ text-decoration:underline;}
 
-#content div.tabs ul.tabs li.ui-tabs-selected a
-, #content div.tabs ul.tabs li.ui-tabs-current a
-, #content div.main div.single div#item-nav div#object-nav ul li.selected a
-, #content div.main div.single div#item-nav div#object-nav ul li.current a{
+div.tabs ul.tabs li.ui-tabs-selected a
+, div.tabs ul.tabs li.ui-tabs-current a
+, div.single div#item-nav div#object-nav ul li.selected a
+, div.single div#item-nav div#object-nav ul li.current a{
 	font-size:12px;
 	padding:.5em 1em;
 	text-decoration:none;
 }
 
-#content div.left-column-wrap
-, #content div.center-column-wrap{
+/* div.left-column-wrap
+, div.center-column-wrap{
 	display:inline;
     float:left;
     width:49.99%;
 	padding:0;
 }
-
-#content div.left-column
-, div#content div.center-column{
-    margin-right:20px;
-}
-
-#content div.center-column div.widget
-, #content div.left-column div.widget{
-    height:285px;
+ */
+ 
+div.center-column div.widget
+, div.left-column div.widget{
+   /*  height:285px; */
     overflow:auto;
 }
 
-#content div.left-center-column
-, #content div.left-bottom-column{
+.home-page .main .grid_4 {width:48%;}
+.home-page .main .grid_8 {width:99%;}
+
+div.left-center-column
+, div.left-bottom-column{
     clear:left;
-    margin-right:20px;
 }
 
-#content div.sidebar{
-    float:right;
-    width:30%;
-}
-
-#content div.sidebar div.right-column-3{
+div.sidebar div.right-column-3{
     margin-bottom:40px;
+}
+
+/* Sidebar and its widgets
+-------------------------------------------------------------- */
+.sidebar h2 { color: #38464C; font-size:1.2em; margin-bottom:.5em }
+.sidebar ul { list-style:none; }
+.sidebar ul.menu {margin-bottom:2em}
+.sidebar ul.menu li { border-bottom: 3px solid white; line-height:3em; font-weight:bold; padding-left:30px; }
+.sidebar ul.menu li a {display:block;}
+.sidebar ul, #sidebar li {list-style:none none;}
+.sidebar ul.blogroll li {margin-bottom:2em;}
+.sidebar ul.blogroll a {background:white; display:block; text-align:center; padding:1em .5em;}
+.sidebar .widget {background:#fff;}
+.sidebar div.tabs {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: .2em;
+	border:3px solid #fff;    
+    margin-bottom:20px;
 }
 
 
@@ -950,17 +972,17 @@ _____________________________________________*/
 /* > Widget Destaque
 __________________________*/
 
-div#general div.widget_destaque div.hlTabs{
+div.widget_destaque div.hlTabs{
 	background:none;
 	border:0;
 	padding:0;
     position:relative;
 }
-div#general div.widget_destaque div.hlTabs div.panel{
+div.widget_destaque div.hlTabs div.panel{
     margin:0 10px;
 }
-div#general div.widget_destaque div.hlTabs .bt_prev
-, div#general div.widget_destaque div.hlTabs .bt_next{
+div.widget_destaque div.hlTabs .bt_prev
+, div.widget_destaque div.hlTabs .bt_next{
     background:url('../img/bt/bt_hl.png') no-repeat;
     display:block;
     height:19px;
@@ -971,21 +993,21 @@ div#general div.widget_destaque div.hlTabs .bt_prev
     width:12px;
     z-index:10;
 }
-div#general div.widget_destaque div.hlTabs .bt_prev{
+div.widget_destaque div.hlTabs .bt_prev{
     background-position:left top;
     left:0;
 }
-div#general div.widget_destaque div.hlTabs .bt_next{
+div.widget_destaque div.hlTabs .bt_next{
     background-position:right top;
     right:0;
 }
-div#general div.widget_destaque div.hlTabs .bt_prev:hover{
+div.widget_destaque div.hlTabs .bt_prev:hover{
     background-position:left bottom;
 }
-div#general div.widget_destaque div.hlTabs .bt_next:hover{
+div.widget_destaque div.hlTabs .bt_next:hover{
     background-position:right bottom;
 }
-div#general div.widget_destaque div.hlTabs ul{
+div.widget_destaque div.hlTabs ul{
 	background:none;
 	border:none;
     left:50%;
@@ -997,14 +1019,14 @@ div#general div.widget_destaque div.hlTabs ul{
     top:150px;
     width:150px;
 }
-div#general div.widget_destaque div.hlTabs ul li{
+div.widget_destaque div.hlTabs ul li{
 	background:none;
 	border:none;
     display:inline;
 	list-style:none;
 	margin:0;
 }
-div#general div.widget_destaque div.hlTabs ul li a{
+div.widget_destaque div.hlTabs ul li a{
     color:#C5C5C5;
 	font-size:2.3em;
 	font-weight:bold;
@@ -1012,14 +1034,14 @@ div#general div.widget_destaque div.hlTabs ul li a{
 	padding:0 2px 2px;
 	text-decoration:none;
 }
-div#general div.widget_destaque div.hlTabs ul li.ui-tabs-selected a
-, div#general div.widget_destaque div.hlTabs ul li.ui-state-hover a{
+div.widget_destaque div.hlTabs ul li.ui-tabs-selected a
+, div.widget_destaque div.hlTabs ul li.ui-state-hover a{
 	color:#03374F;
 }
-div#general div.widget_destaque div.hlTabs div.ui-tabs-panel{
+div.widget_destaque div.hlTabs div.ui-tabs-panel{
 	padding:0;
 }
-div#general div.widget_destaque div.hlTabs .thumb{
+div.widget_destaque div.hlTabs .thumb{
     border:1px solid #ccc;
 	clear:both;
 	display:block;
@@ -1029,14 +1051,14 @@ div#general div.widget_destaque div.hlTabs .thumb{
     padding:3px;
 	text-align:center;
 }
-div#general div.widget_destaque div.hlTabs .thumb img{
+div.widget_destaque div.hlTabs .thumb img{
 	border:none;
     width:304px;
 }
-div#general div.widget_destaque div.hlTabs h2{
+div.widget_destaque div.hlTabs h2{
     font-size:100%;
 }
-div#general div.widget_destaque div.hlTabs h2 a{
+div.widget_destaque div.hlTabs h2 a{
 	display:block;
 	font-size:1.8em;
     font-weight:normal;
@@ -1048,15 +1070,15 @@ div#general div.widget_destaque div.hlTabs h2 a{
 /* > Widget Tags Cloud
 __________________________*/
 
-div#general div.widget_tagcloud{
+div.widget_tagcloud{
 	text-align:justify;
 }
-div#general div.widget_tagcloud a{
+div.widget_tagcloud a{
 	color:#222;
     text-decoration:none;
     padding:0 3px;
 }
-div#general div.widget_tagcloud a:hover{
+div.widget_tagcloud a:hover{
     background-color:#0076a4;
     color:#fff;
 }
@@ -1065,34 +1087,34 @@ div#general div.widget_tagcloud a:hover{
 /* > Widget RSS
 __________________________*/
 
-div#general div.widget_rss li{
-    border-top:1px solid #d8d8d8;
+div.widget_rss li{
+    border-top:3px solid #f8f8f8;
     list-style:none;
-	font-size:1.2em;
+	/* font-size:1.2em; */
     margin-bottom:15px;
     padding-top:15px;
 }
-div#general div.widget_rss li:first-child{
+div.widget_rss li:first-child{
     border:none;
     padding-top:5px;
 }
-div#general div.widget_rss .rsswidget{
+div.widget_rss .rsswidget{
     display:block;
     font-weight:bold;
     margin-bottom:5px;
     text-decoration:none;
 }
-div#general div.widget_rss .rsswidget:hover{
+div.widget_rss .rsswidget:hover{
     text-decoration:underline;
 }
-div#general div.widget_rss span.rss-date{
+div.widget_rss span.rss-date{
     color:#ABABAB;
     display:block;
     font-size:1.1em;
     margin-bottom:5px;
     text-transform:capitalize
 }
-div#general div.widget_rss cite{
+div.widget_rss cite{
     color:black;
     display:block;
     margin-top:5px;
@@ -1103,7 +1125,7 @@ div#general div.widget_rss cite{
 /* > Widget Recent comments
 __________________________*/
 
-div#general div.widget_recentComments img{
+div.widget_recentComments img{
 	border:1px solid #ccc;
 	display:inline;
 	float:left;
@@ -1114,21 +1136,21 @@ div#general div.widget_recentComments img{
 	text-indent:-999em;
 	width:50px;
 }
-div#general div.widget_recentComments li{
+div.widget_recentComments li{
 	border-top:1px solid #ccc;
 	list-style:none;
 	padding:7px 5px;
 }
-div#general div.widget_recentComments li:first-child{
+div.widget_recentComments li:first-child{
 	border:none;
 }
-div#general div.widget_recentComments li p a{
+div.widget_recentComments li p a{
 	color:#0f6aa3;
 }
-div#general div.widget_recentComments li p a:hover{
+div.widget_recentComments li p a:hover{
 	text-decoration:none;
 }
-div#general div.widget_recentComments li p.comment_content{
+div.widget_recentComments li p.comment_content{
 	margin-top:3px;
 }
 
@@ -1136,45 +1158,45 @@ div#general div.widget_recentComments li p.comment_content{
 /* > Widget LabBlog
 __________________________*/
 
-div#general div.widget_customPosts ul{
+div.widget_customPosts ul{
 	overflow:hidden;
 }
-div#general div.widget_customPosts li{
+div.widget_customPosts li{
 	border-bottom:1px solid #D8D8D8;
 	font-size:1.2em;
 	list-style:none;
 	padding:5px 0;
 }
-div#general div.widget_customPosts li:first-child{
+div.widget_customPosts li:first-child{
 	padding-top:0;
 }
-div#general div.widget_customPosts li:last-child{
+div.widget_customPosts li:last-child{
 	border:none;
 }
-div#general div.widget_customPosts li .thumb{
+div.widget_customPosts li .thumb{
 	border:1px solid #CCCCCC;
 	display:inline;
 	float:left;
 	margin-right:10px;
 	padding:2px;
 }
-div#general div.widget_customPosts li .thumb img{
+div.widget_customPosts li .thumb img{
 	border:none;
 	display:block;
 	height:50px;
 	overflow:hidden;
 	width:50px;
 }
-div#general div.widget_customPosts h2{
+div.widget_customPosts h2{
 	font-size:100%;
 	margin-top:5px;
 }
-div#general div.widget_customPosts h2 a{
+div.widget_customPosts h2 a{
 	font-size:1.1em;
 	font-weight:bold;
 	text-decoration:none;
 }
-div#general div.widget_customPosts h2 a:hover{
+div.widget_customPosts h2 a:hover{
 	text-decoration:underline;
 }
 
@@ -1182,48 +1204,48 @@ div#general div.widget_customPosts h2 a:hover{
 /* > Widget Membros & Grupos
 __________________________*/
 
-div#general div.widget_bp_groups_widget
-, div#general div.widget_bp_core_members_widget
-, div#general div.widget_bp_groups_widget{
+div.widget_bp_groups_widget
+, div.widget_bp_core_members_widget
+, div.widget_bp_groups_widget{
     height:136px;
 }
-div#general div.widget_bp_groups_widget div.item-options
-, div#general div.widget_bp_core_members_widget div.item-options{
+div.widget_bp_groups_widget div.item-options
+, div.widget_bp_core_members_widget div.item-options{
 	border-bottom:1px solid #ccc;
 	font-size:1.2em;
     margin:-4px 0 3px;
 	padding:0 0 3px;
     text-align:right;
 }
-div#general div.widget_bp_groups_widget div.item-options a
-, div#general div.widget_bp_core_members_widget div.item-options a{
+div.widget_bp_groups_widget div.item-options a
+, div.widget_bp_core_members_widget div.item-options a{
 	text-decoration:none;
 }
-div#general div.widget_bp_groups_widget div.item-options a.selected
-, div#general div.widget_bp_core_members_widget div.item-options a.selected{
+div.widget_bp_groups_widget div.item-options a.selected
+, div.widget_bp_core_members_widget div.item-options a.selected{
     font-weight:bold;
 }
-div#general div.widget_bp_groups_widget ul.item-list
-, div#general div.widget_bp_core_members_widget ul.item-list{
+div.widget_bp_groups_widget ul.item-list
+, div.widget_bp_core_members_widget ul.item-list{
 	display:inline;
 	float:left;
 	margin:0;
 }
-div#general div.widget_bp_groups_widget ul.item-list li
-, div#general div.widget_bp_core_members_widget ul.item-list li{
+div.widget_bp_groups_widget ul.item-list li
+, div.widget_bp_core_members_widget ul.item-list li{
 	background:transparent;
 	border:none;
 	display:inline;
 	float:left;
 	padding:3px;
 }
-div#general div.widget_bp_groups_widget ul.item-list div.item
-, div#general div.widget_bp_core_members_widget ul.item-list div.item{
+div.widget_bp_groups_widget ul.item-list div.item
+, div.widget_bp_core_members_widget ul.item-list div.item{
 	display:none;
 }
 
-div#general div.widget_bp_groups_widget ul.item-list a img
-, div#general div.widget_bp_core_members_widget ul.item-list a img{
+div.widget_bp_groups_widget ul.item-list a img
+, div.widget_bp_core_members_widget ul.item-list a img{
 	border:1px solid #ccc;
 	display:block;
 	height:50px;
@@ -1235,14 +1257,14 @@ div#general div.widget_bp_groups_widget ul.item-list a img
 /* > Widget Atividades
 __________________________*/
 
-div#general div.widget_activity{
+div.widget_activity{
 	position:relative;
 }
-div#general div.widget_activity form #aw-whats-new-submit{
+div.widget_activity form #aw-whats-new-submit{
 	float:none;
 }
-div#general div.widget_activity img
-, .activity div#general div.main img{
+div.widget_activity img
+, .activity div.main img{
 	border:1px solid #CCCCCC;
 	display:block;
 	height:60px;
@@ -1252,19 +1274,19 @@ div#general div.widget_activity img
 	text-indent:-999em;
 	width:60px;
 }
-div#general div.widget_activity img.align-left{
+div.widget_activity img.align-left{
 	margin-left:0;
 }
-div#general div.main form#whats-new-form h5{
+div.main form#whats-new-form h5{
     margin-bottom:5px;
 }
-div#general div.main form#whats-new-form textarea{
+div.main form#whats-new-form textarea{
     height:48px;
 }
-div#general div.main form#whats-new-form select#whats-new-post-in option{
+div.main form#whats-new-form select#whats-new-post-in option{
     padding:0 5px;
 }
-div#general div.main .feed{
+div.main .feed{
     background:url("../img/bg/bg_rss.png") left center no-repeat;
     color:#727272;
     display:block;
@@ -1275,15 +1297,15 @@ div#general div.main .feed{
 	top:10px;
 	right:10px;
 }
-div#general div.main ul.activity-list li img.avatar{
+div.main ul.activity-list li img.avatar{
     height:48px;
     width:48px;
 }
-div#general div.main div.activity-content{
+div.main div.activity-content{
 	margin:0 10px 0 70px;
 }
-div#general div.main div.activity-content div.activity-header a
-, div#general div.main div.acomment-meta a{
+div.main div.activity-content div.activity-header a
+, div.main div.acomment-meta a{
     font-weight:bold;
 }
 span.time-since{
@@ -1297,49 +1319,49 @@ span.time-since{
 	color:#0E5F86;
     font-weight:normal !important;
 }
-div#general div.main div.activity-comments > ul
-, div#general div.main div.activity-inner{
+div.main div.activity-comments > ul
+, div.main div.activity-inner{
 	margin-top:10px;
 }
-div#general div.main div.widget_activity div.activity-inner{
+div.main div.widget_activity div.activity-inner{
 	font-size:1.2em;
 }
-div#general div.main div.activity-inner div.activity-inner{
+div.main div.activity-inner div.activity-inner{
 	background:0;
 	border:0;
 	color:#444;
 	margin:0;
 	padding:0;
 }
-div#general div.widget_activity a
+div.widget_activity a
 , .activity div.main a{
     text-decoration:none;
 }
-div#general div.widget_activity a:hover
+div.widget_activity a:hover
 , .activity div.main a:hover{
     text-decoration:underline;
 }
-div#general div.widget_activity ul.activity-list li
-, .activity div#general div.main ul.activity-list li
-, .groups div#general div.main ul.activity-list li{
+div.widget_activity ul.activity-list li
+, .activity div.main ul.activity-list li
+, .groups div.main ul.activity-list li{
 	background:#fff;
 	border-top:none !important;
-	border-bottom:1px solid #d8d8d8;
+	border-bottom:3px solid #f8f8f8;
     padding:12px 0;
 	position:relative;
 }
-div#general div.widget_activity ul.activity-list li.read-more{
+div.widget_activity ul.activity-list li.read-more{
 	border:medium none;
 	font-size:1.2em;
 	padding:10px 0 0;
 	text-align:right;
 }
-div#general div.widget_activity div.activity-header
-, .activity div#general ul.activity-list div.activity-header{
+div.widget_activity div.activity-header
+, .activity ul.activity-list div.activity-header{
 	margin-right:75px;
 }
-div#general div.widget_activity div.activity-meta
-, .activity div#general ul.activity-list div.activity-meta{
+div.widget_activity div.activity-meta
+, .activity ul.activity-list div.activity-meta{
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	background:none repeat scroll 0 0 #EEEEEE;
@@ -1366,7 +1388,7 @@ div#general div.widget_activity div.activity-meta
 	float:right;
 	margin-top:2px;
 }
-div#general div.main ul.activity-list li:hover div.activity-meta{
+div.main ul.activity-list li:hover div.activity-meta{
 	display:block;
 }
 .fav.loading
@@ -1376,50 +1398,50 @@ div#general div.main ul.activity-list li:hover div.activity-meta{
 .unfav{
     background-position:right center;
 }
-div#general div.main div.activity-comments{
+div.main div.activity-comments{
 	margin:0;
 }
-div#general div.main div.activity-comments ul{
+div.main div.activity-comments ul{
 	background:url('../img/bg/bg_activityCommentReply.png') 23px 0 no-repeat;
 	clear:both;
 	margin:3px;
 	padding-left:36px;
 }
-div#general div.main div.activity-comments div.acomment-avatar
-, div#general div.main div.activity-comments div.acomment-meta{
+div.main div.activity-comments div.acomment-avatar
+, div.main div.activity-comments div.acomment-meta{
 	display:inline;
 	float:left;
 }
-div#general div.main div.activity-comments div.acomment-meta{
+div.main div.activity-comments div.acomment-meta{
 	display:block;
 	float:none;
 	margin-left:70px;
 }
-div#general div.main div.activity-comments div.acomment-content{
+div.main div.activity-comments div.acomment-content{
 	margin-top:5px;
 	margin-left:70px;
 }
-div#general div.main div.activity-comments span.acomment-replylink a
-, div#general div.main div.activity-comments ul.has-comments a{
+div.main div.activity-comments span.acomment-replylink a
+, div.main div.activity-comments ul.has-comments a{
 	display:inline !important;
 	position:static;
 }
-div#general div.main div.activity-comments li{
+div.main div.activity-comments li{
 	background-color:transparent !important;
 	margin:10px 0;
 	padding:8px;
 }
-div#general div.main div.activity-comments form div.ac-textarea{
+div.main div.activity-comments form div.ac-textarea{
 	background:#fff;
 }
-div#general div.main div.activity-comments form div.ac-reply-content{
+div.main div.activity-comments form div.ac-reply-content{
     margin-left:70px;
 }
-div#general div.main .ac-reply-content .submitDefault{
+div.main .ac-reply-content .submitDefault{
     float:none;
     margin-left:0;
 }
-div#general div.main div.activity-comments form .ac-textarea{
+div.main div.activity-comments form .ac-textarea{
     margin-bottom:0;
 }
 #message p{
@@ -1430,30 +1452,31 @@ div#general div.main div.activity-comments form .ac-textarea{
 /* > Widget Blogs
 __________________________*/
 
-div#general div.widget_blogs div.item-list-tabs{
+div.widget_blogs div.item-list-tabs{
 	margin:0 0 10px;
 	padding:0 0 5px;
 }
-div#general div.widget_blogs div.item-list-tabs li.menulist{
+div.widget_blogs div.item-list-tabs li.menulist{
     margin:0;
 }
-div#general div.widget_blogs div.item-list-tabs li.menulist a{
+div.widget_blogs div.item-list-tabs li.menulist a{
     margin:0 7px 0 4px;
 	text-decoration:none;
 }
-div#general div.widget_blogs div.item-list-tabs li.menulist a:hover{
+div.widget_blogs div.item-list-tabs li.menulist a:hover{
 	font-weight:bold;
 }
-div#general div.widget_blogs div.item-list-tabs li.selected a{
+div.widget_blogs div.item-list-tabs li.selected a{
     font-weight:bold;
 }
-div#general div.widget_blogs div.blogs ul.item-list li{
+div.widget_blogs div.blogs ul.item-list li{
 	height:57px;
 	padding:10px;
 	position:relative;
+	border-bottom:3px solid #f8f8f8;
 }
 
-div#general div.widget_blogs div.blogs ul.item-list li a img{
+div.widget_blogs div.blogs ul.item-list li a img{
 	border:1px solid #ccc;
 	display:block;
 	height:50px;
@@ -1462,37 +1485,36 @@ div#general div.widget_blogs div.blogs ul.item-list li a img{
 	text-indent:-999em;
 	width:50px;
 }
-div#general div.widget_blogs div.blogs ul.item-list div.item-title
+div.widget_blogs div.blogs ul.item-list div.item-title
 , body.blogs #content div.main div.item-title{
 	margin-right:5px;
 }
-div#general div.widget_blogs div.blogs ul.item-list div.item-title a
+div.widget_blogs div.blogs ul.item-list div.item-title a
 , body.blogs #content div.main div.item-title a{
 	font-size:1.2em;
 	font-weight:bold;
 	text-decoration:none;
 }
-div#general div.widget_blogs div.blogs ul.item-list div.meta
+div.widget_blogs div.blogs ul.item-list div.meta
 , body.blogs #content div.main div.meta{
 	color:#646464;
-	font-size:1.1em;
 	font-weight:bold;
 }
-div#general div.widget_blogs div.blogs ul.item-list div.meta a
+div.widget_blogs div.blogs ul.item-list div.meta a
 , body.blogs #content div.main div.meta a{
 	font-weight:normal;
 }
-div#general div.widget_blogs div.blogs ul.item-list div.item
+div.widget_blogs div.blogs ul.item-list div.item
 , body.blogs #content div.main div.item{
 	margin-bottom:5px;
 }
-div#general div.widget_blogs div.blogs ul.item-list li div.action
+div.widget_blogs div.blogs ul.item-list li div.action
 , body.blogs #content div.main div.action{
 	position:static;
 	text-align:left;
 	margin-left:65px;
 }
-div#general div.widget_blogs div.blogs ul.item-list li div.action div.visit
+div.widget_blogs div.blogs ul.item-list li div.action div.visit
 , body.blogs #content div.main div.action div.visit{
 	display:none;
 }
@@ -1501,17 +1523,17 @@ div#general div.widget_blogs div.blogs ul.item-list li div.action div.visit
 /* Widget login & Register
 __________________________*/
 
-div#general div.widget_login
-, div#general div.widget_register{
+div.widget_login
+, div.widget_register{
 	padding:10px;
 }
-div#general div.widget_login fieldset
-, div#general div.widget_register fieldset{
+div.widget_login fieldset
+, div.widget_register fieldset{
 	border:none;
 	margin:0 10px;
 	position:relative;
 }
-div#general div.widget_login label.login{
+div.widget_login label.login{
 	background:url('../img/bg/bg_login.png') -5px 3px no-repeat;
 	display:inline;
 	float:left;
@@ -1521,55 +1543,54 @@ div#general div.widget_login label.login{
 	text-indent:-999em;
 	width:38px;
 }
-div#general div.widget_login div.inputDefault
-, div#general div.widget_register div.inputDefault{
+div.widget_login div.inputDefault
+, div.widget_register div.inputDefault{
 	display:block;
 	float:none;
 	margin-left:58px;
 	margin-bottom:6px;
 }
-div#general div.widget_login div.inputDefault input
-, div#general div.widget_register div.inputDefault input{
+div.widget_login div.inputDefault input
+, div.widget_register div.inputDefault input{
 	border:none;
 	width:100%;
 }
-div#general div.widget_login div.pw{
+div.widget_login div.pw{
 	margin-right:62px;
 }
-div#general div.widget_login button.submitDefault
-, div#general div.widget_register button.submitDefault{
+div.widget_login button.submitDefault
+, div.widget_register button.submitDefault{
 	position:absolute;
 	top:30px;
 	right:0;
 	width:57px;
-	font-size:1.3;
 }
-div#general div.widget_login button.loading{
+div.widget_login button.loading{
 	background-position:center;
 	text-indent:-999em;
 }
-div#general div.widget_login div.forever{
+div.widget_login div.forever{
 	margin-left:58px;
 	color:#535353;
 	text-align:right;
 }
-div#general div.widget_login div.forever label{
+div.widget_login div.forever label{
 	float:left;
-	font-size:1.2em;
 }
-div#general div.widget_login div.forever input{
+div.widget_login div.forever input{
 	display:inline;
 	border-color:#767676;
 	float:left;
 	margin-right:5px;
 }
-div#general div.widget_login div.forever a{
-	font-size:1.2em;
+div.widget_login div.forever a,
+div.widget_login div.forever label{
+	font-size:0.85em;
 }
-div#general div.widget_login div.forever a:hover{
+div.widget_login div.forever a:hover{
 	text-decoration:none;
 }
-div#general div.widget_login div.panel img{
+div.widget_login div.panel img{
 	border:1px solid #ccc;
 	display:inline;
 	float:left;
@@ -1578,28 +1599,26 @@ div#general div.widget_login div.panel img{
 	padding:2px;
 	width:50px;
 }
-div#general div.widget_login div.panel h3{
+div.widget_login div.panel h3{
 	color:#3c3c3c;
 	float:left;
-	font-size:1.3em;
 	font-weight:normal;
 }
-div#general div.widget_login div.panel div.linksAdmin{
+div.widget_login div.panel div.linksAdmin{
 	display:inline;
 	float:right;
-	font-size:1.2em;
 	margin-bottom:15px;
 }
-div#general div.widget_login div.panel div.linksAdmin a{
+div.widget_login div.panel div.linksAdmin a{
 	color:#006389;
 }
-div#general div.widget_login div.panel div.linksAdmin a:hover{
+div.widget_login div.panel div.linksAdmin a:hover{
 	text-decoration:none;
 }
-div#general div.widget_login div.panel div.linksAdmin strong a{
+div.widget_login div.panel div.linksAdmin strong a{
 	color:#3c3c3c;
 }
-div#general div.widget_login div.panel div.msg{
+div.widget_login div.panel div.msg{
 	background:#f7f1bc;
 	border:1px solid #ccc972;
 	clear:right;
@@ -1611,27 +1630,26 @@ div#general div.widget_login div.panel div.msg{
 
 /* Widget Register
 __________________________*/
-div#general div.widget_register form#registerform label{
+div.widget_register form#registerform label{
 	display:inline;
 	float:left;
 	margin-right:5px;
 	margin-top:4px;
 	text-align:right;
 	width:115px;
-	font-size:1.2em;
 }
-div#general div.widget_register form#registerform div.inputDefault{
+div.widget_register form#registerform div.inputDefault{
 	float:none;
 	margin-left:120px;
 	margin-right:0;
 }
-div#general div.widget_register form#registerform button.submitDefault{
+div.widget_register form#registerform button.submitDefault{
 	position:static;
 	margin:0;
 	float:right;
 	width:auto;
 }
-div#general div.widget_register form#registerform select{
+div.widget_register form#registerform select{
 	height:22px;
 	margin-bottom:15px;
 }
@@ -1640,15 +1658,15 @@ div#general div.widget_register form#registerform select{
 /* Widget Map
 __________________________*/
 
-div#general div.widget_map h2{
+div.widget_map h2{
 	color:#666;
 }
-div#general div.widget_map iframe{
+div.widget_map iframe{
 	height:200px;
 	margin:15px 0;
 	width:100%;
 }
-div#general div.widget_map a{
+div.widget_map a{
 	display:inline;
 	float:right;
 	height:auto;
@@ -1660,30 +1678,30 @@ div#general div.widget_map a{
 /* Widget twitter
 _______________________________*/
 
-div#general div.widget_tweetblender{
+div.widget_tweetblender{
 	line-height:130%;
 	font-size:1.2em;
 }
-div#general div.widget_tweetblender div.tweetblendert{
+div.widget_tweetblender div.tweetblendert{
 	border-bottom:1px solid #D8D8D8;
 }
-div#general div.widget_tweetblender div.tb_tweet{
+div.widget_tweetblender div.tb_tweet{
 	border-top:1px solid #D8D8D8;
 	padding:15px 0;
 }
-div#general div.widget_tweetblender div.tb_tweetlist{
+div.widget_tweetblender div.tb_tweetlist{
 	border-bottom:1px solid #D8D8D8;
 	margin-bottom:7px;
 }
-div#general div.widget_tweetblender div.tb_footer{
+div.widget_tweetblender div.tb_footer{
 	font-size:1.2em;
 	margin:0;
 	overflow:hidden;
 }
-div#general div.widget_tweetblender div.tb_footer a{
+div.widget_tweetblender div.tb_footer a{
 	text-decoration:none;
 }
-div#general div.widget_tweetblender div.tb_footer a:hover{
+div.widget_tweetblender div.tb_footer a:hover{
 	text-decoration:underline;
 }
 
@@ -1691,27 +1709,27 @@ div#general div.widget_tweetblender div.tb_footer a:hover{
 /* > Buddypress defaults
 _______________________________*/
 
-div#general div.main div.activity-type-tabs{
+div.main div.activity-type-tabs{
     margin:0;
     padding:0 0 5px;
 }
-div#general div.main ul.activity-type-tabs li
-, div#general div.main div.item-list-tabs li{
+div.main ul.activity-type-tabs li
+, div.main div.item-list-tabs li{
     margin:0;
 }
-div#general div.main ul.activity-type-tabs li a
-, div#general div.main div.item-list-tabs li a{
+div.main ul.activity-type-tabs li a
+, div.main div.item-list-tabs li a{
     color:#222222;
     margin:0 5px;
     text-decoration:none;
 }
-div#general div.main ul.activity-type-tabs li:first-child a
-, div#general div.main div.item-list-tabs li:first-child a{
+div.main ul.activity-type-tabs li:first-child a
+, div.main div.item-list-tabs li:first-child a{
     margin-left:0;
 }
-div#general div.main ul.activity-type-tabs li.selected a
-, div#general div.main div.item-list-tabs li.selected a
-, div#general div.main a.selected{
+div.main ul.activity-type-tabs li.selected a
+, div.main div.item-list-tabs li.selected a
+, div.main a.selected{
     font-weight:bold;
 }
 .activity div.main div.marginRight20{
@@ -1725,7 +1743,7 @@ div#general div.main ul.activity-type-tabs li.selected a
 	top:175px !important;
 	right:12px !important;
 }
-body div#general #content div.widget_activity .feed{
+body #content div.widget_activity .feed{
 	top:10px !important;
 	right:10px !important;
 }
@@ -1743,7 +1761,7 @@ body div#general #content div.widget_activity .feed{
 div.item-list-tabs {
 	margin: 10px 0;
 	padding: 5px 0;
-	border-bottom: 1px solid #ddd;
+	border-bottom:3px solid #ddd;
 	overflow: hidden;
 	clear: both;
 	font-size:1em;
@@ -2176,8 +2194,8 @@ __________________________*/
     padding:5px;
     text-align:center;
 }
-div#general div#content div.widget_activity li.load-more
-, div#general div#content div.widget_activity li.ver-todos{
+div#content div.widget_activity li.load-more
+, div#content div.widget_activity li.ver-todos{
 	background:#fff;
 	border:none;
 	height:22px;
