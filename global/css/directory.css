@@ -36,10 +36,10 @@ body.directory div#content div.main div.item-desc
     margin-right:180px;
 }
 #content div.main ul.item-list{
-	border-bottom:1px solid #EAEAEA !important;
+	border-bottom:3px solid #ddd; !important;
 }
 #content div.main ul.item-list li{
-    border-top:1px solid #EAEAEA;
+    border-top:3px solid #f8f8f8;
     padding:10px 5px;
 }
 #content div.main ul.item-list li div.item-avatar img{

@@ -38,8 +38,12 @@
     
 	function fg_custom_profile_fields () {
   		require_once('userprofile/form.php');
+                require_once('userprofile/termo.php');
 	}
 	add_action ('bp_after_signup_profile_fields', 'fg_custom_profile_fields');
+
+	
+
 
 /*	function fg_validate_custom_profile_fields () {
   		global $bp;
