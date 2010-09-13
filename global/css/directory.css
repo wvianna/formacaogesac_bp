@@ -1,4 +1,211 @@
-/* Bp Directory
+body.directory div#content div.main form#whats-new-form,
+body.directory div#content div.main input#aw-whats-new-submit{float:none;margin:0;}
+
+body.directory div#content div.main form form{margin-right:0;}
+
+.activity div#content div.main h1 .button
+, body.directory div#content div.main form h1 .button
+, .group-create div#content div.main h1 .button
+, .create div#content div.main h1 .button{
+	color:#666666;
+	font-size:0.5em;
+	font-weight:normal;
+	letter-spacing:0;
+	text-decoration:none;
+	text-transform:lowercase;
+}
+.activity div#content div.main h1 .button:hover
+, body.directory div#content div.main form h1 .button:hover
+, .group-create div#content div.main h1 .button:hover
+, .create div#content div.main h1 .button:hover{
+	text-decoration:underline;
+} /*
+.activity div#content div.main h1{
+	margin-bottom:15px;
+} */
+body.directory div#content div.main div.item-desc
+, body.groups div#content div.main div.item-desc{
+    margin-top:5px;
+    margin-right:180px;
+}
+#content div.main ul.item-list{
+	border-bottom:3px solid #ddd; !important;
+}
+#content div.main ul.item-list li{
+    border-top:3px solid #f8f8f8;
+    padding:10px 5px;
+}
+#content div.main ul.item-list li div.item-avatar img{
+    border:1px solid #ccc;
+	display:block;
+	height:50px;
+	overflow:hidden;
+    padding:2px;
+	text-indent:-999em;
+	width:50px;
+}
+#content div.main ul.item-list li div.item{
+    color:#3f3f3f;
+}
+#content div.main ul.item-list li div.item a{
+	font-size:1.1em;
+	font-weight:bold;
+    text-transform:capitalize;
+    text-decoration:none;
+}
+#content div.main ul.item-list li div.item a:hover{
+    text-decoration:underline;
+}
+#content div.main ul.item-list li div.item span.update{
+	font-size:1.1em;
+}
+#content div.main ul.item-list li div.item span.update a{
+	font-size:1em;
+}
+#content div.main ul.item-list li div.item div.item-title{
+	margin-right:150px;
+}
+.blogs #content div.main ul.item-list li div.item div.item-title{
+	width:auto;
+}
+#content div.main ul.item-list li div.item-meta{
+    /* margin-top:15px; */
+}
+#content div.main ul.item-list li div.item-meta span.activity{
+    color:#999;
+	/* font-size:1.1em; */
+}
+body.blogs div#content div.main ul.item-list li div.item-meta{
+    margin-top:0;
+}
+.create div#content div.main h1{
+	float:none;
+}
+body.blogs div#content div.main .inputDefault{
+	float:none;
+	margin:0;
+	width:150px;
+}
+body.blogs div#content div.main label{
+	font-weight:bold;
+}
+body.blogs div#content div.main label.checkbox{
+	margin:5px 0;
+}
+body.blogs div#content div.main input.submit{
+	float:right;
+}
+body.blogs div#content div.main input#blogname
+, body.blogs div#content div.main input#blog_title{
+	border:1px solid #ccc;
+    border-top:1px solid #666;
+    color:#333;
+	display:inline;
+    font-size:1.2em;
+    height:17px;
+    padding:3px 5px 2px;
+	width:150px;
+}
+
+/* Forums */
+body.forums div#content div.main div#new-topic-post{
+	clear:both;
+}
+body.forums div#content div.main div#new-topic-post .inputDefault{
+	float:none;
+	width:200px;
+}
+body.forums div#content div.main div#new-topic-post .submitDefault{
+	float:none;
+}
+body.forums div#content div.main div#new-topic-post div.inputDefault{
+	display:block;
+	height:auto;
+	width:auto;
+}
+body.forums div#content div.main div#new-topic-post div.inputDefault textarea{
+	border:none;
+	width:100%;
+}
+body.forums div#content div.main table.forum
+, body.groups table.forum{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	display:block;
+	font-size:1.2em;
+	margin:20px 0;
+	text-align:left;
+}
+body.forums div#content div.main table.forum th
+, body.groups table.forum th{
+	color:#565656;
+	padding:10px 0;
+}
+body.forums div#content div.main table.forum th#th-title
+, body.forums div#content div.main table.forum td.td-title
+, body.groups table.forum th#th-title
+, body.groups table.forum td.td-title{
+	padding-left:5px;
+}
+body.forums #content div.main table.forum th#th-freshness
+, body.forums #content div.main table.forum td.td-freshness
+, body.groups table.forum th#th-freshness
+, body.groups table.forum td.td-freshness{
+	padding-right:5px;
+	text-align:center;
+}
+body.forums #content div.main table.forum th
+, body.forums #content div.main table.forum td
+, body.groups table.forum th
+, body.groups table.forum td{
+	padding-right:15px;
+}
+body.forums #content div.main table.forum a
+, body.groups table.forum a{
+	color:#565656;
+}
+body.forums #content div.main table.forum th#th-title
+, body.groups table.forum th#th-title{
+	width:35%;
+}
+body.forums #content div.main table.forum th#th-poster
+, body.groups table.forum th#th-poster{
+	width:25%
+}
+body.forums #content div.main table.forum th#th-group
+, body.groups table.forum th#th-group{
+	width:25%;
+}
+body.forums #content div.main table.forum th#th-postcount
+, body.groups table.forum th#th-postcount{
+	width:5%;
+}
+body.forums #content div.main table.forum th#th-freshness
+, body.groups table.forum th#th-freshness{
+	width:20%;
+}
+body.forums #content div.main table.forum td
+, body.groups table.forum td{
+	border-top:1px solid #EAEAEA;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+body.forums #content div.main table.forum td.td-postcount
+, body.groups table.forum td.td-postcount{
+	text-align:center;
+}
+body.forums #content div.main table.forum td img
+, body.groups table.forum td img{
+	border:1px solid #ccc;
+	display:inline;
+	float:left;
+	height:20px;
+	margin-right:5px;
+	overflow:hidden;
+	padding:2px;
+	text-indent:-999em;
+	width:20px;
+}/* Bp Directory
 *  
 *  Author: Marcos Maia Lopes
 *  Author e-mail: marcos@creativemarkup.com.br

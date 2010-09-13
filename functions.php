@@ -43,8 +43,6 @@
 	add_action ('bp_after_signup_profile_fields', 'fg_custom_profile_fields');
 
 	
-
-
 /*	function fg_validate_custom_profile_fields () {
   		global $bp;
   		//Verifica se o valor inserido no campo endereço é um número de um ponto válido//
