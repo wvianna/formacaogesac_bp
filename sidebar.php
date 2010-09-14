@@ -14,5 +14,10 @@
 		<?php tabbed_dynamic_sidebar('right-column-3'); ?>
     </div>
     <?php endif; ?>
+    <?php if(has_active_widgets('right-column-4')) : ?>
+    <div class="right-column right-column-4 tabs">
+		<?php tabbed_dynamic_sidebar('right-column-4'); ?>
+    </div>
+    <?php endif; ?> 
 </div>
 

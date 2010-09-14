@@ -289,6 +289,7 @@
 		my_register_sidebar('right-column-1');
 		my_register_sidebar('right-column-2');
 		my_register_sidebar('right-column-3');
+                my_register_sidebar('right-column-4');
 		my_register_sidebar('members-column-1');
 		my_register_sidebar('members-column-2');
 		my_register_sidebar('members-column-3');
