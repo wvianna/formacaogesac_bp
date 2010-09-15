@@ -36,7 +36,7 @@ class widget_register extends WP_Widget
                     
                     <label for="userLogin_">Nome do usuário:</label>
                     <div class="inputDefault"><input type="text" name="signup_username" id="userLogin_" value="usuário" /></div>
-                    <div class="messageAlertLogin"><span>Somente letras minúsculas e números são permitidos</span></div>
+                    <div class="messageAlertLoginWidgetRegister"><span>Somente letras minúsculas e números são permitidos</span></div>
                     
                     <label for="signup_email">E-mail:</label>
                     <div class="inputDefault"><input type="text" id="signup_email" name="signup_email" value="exemplo@exemplo.org" /></div>

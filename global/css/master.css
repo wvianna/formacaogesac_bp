@@ -2249,10 +2249,15 @@ div#content div.widget_activity li.load-more
 /* Desquebrando layout do register */
 .customField { clear:both; }
 
-.messageAlertLogin {
+.messageAlertLoginWidgetRegister {
   color:red;
-  float:right;
   font-size:10px;
-  padding-bottom:7px;
+  margin-bottom:1em;
+  margin-left:1.5em;
+}
+.messageAlertLoginRegister {
+  color:red;
+  font-size:10px;
+  margin-bottom:1em;
 }
 
