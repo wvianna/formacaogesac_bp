@@ -28,7 +28,7 @@
 					            <label for="signup_username"><?php _e( 'Username', 'buddypress' ) ?>: *</label>
 					            <?php do_action( 'bp_signup_username_errors' ) ?>
 					            <div class="inputDefault"><input type="text" name="signup_username" id="signup_username" value="<?php bp_signup_username_value() ?>" /></div>
-
+                                                    <div class="messageAlertLogin"><span>Somente letras minúsculas e números são permitidos</span></div>
 					            <label for="signup_email"><?php _e( 'Email Address', 'buddypress' ) ?>: *</label>
 					            <?php do_action( 'bp_signup_email_errors' ) ?>
 					            <div class="inputDefault"><input type="text" name="signup_email" id="signup_email" value="<?php echo $_POST['signup_email']; ?>" /></div>
