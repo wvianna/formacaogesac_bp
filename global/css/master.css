@@ -2261,3 +2261,47 @@ div#content div.widget_activity li.load-more
   margin-bottom:1em;
 }
 
+#conteudo {
+	min-width:250px;
+	max-width:1200px;
+	overflow:auto;
+}
+
+#tabelaresultado {
+	border:1px solid #e7e7e7;
+}
+
+#tabelaresultado th {
+	color:white;
+	background-color:#1f9ed7;	
+	border-left:1px solid #e7e7e7;
+	border-right:1px solid #e7e7e7;
+	padding:3px;
+	vertical-align:top;
+}
+
+#linha_com_cor {
+	background-color:#c7e7f5;	
+	padding:3px;
+	vertical-align:top;
+}
+
+#linha_com_cor td {
+	border-left:1px solid #e7e7e7;
+	border-right:1px solid #e7e7e7;
+	font-size:10px;
+}
+
+#linha_sem_cor {
+	background-color:white;	
+	padding:3px;
+	vertical-align:top;
+}
+
+#linha_sem_cor td {
+	border-left:1px solid #e7e7e7;
+	border-right:1px solid #e7e7e7;
+	font-size:10px;
+}
+
+.container_11 .grid_900 {width:95%;}
