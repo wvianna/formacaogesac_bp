@@ -344,6 +344,8 @@ var bp_ajax_request = null;
 
 j(document).ready( function() {
 	/**** Page Load Actions *******************************************************/
+        /* Adicionado ação para que todos os links customizados abrirem em nova aba */
+       j(".menu-item-type-custom a").attr('target','_blank');
 
 	/* Hide Forums Post Form */
 	if ( j('div.forums').length )
