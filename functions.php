@@ -68,6 +68,7 @@
                 <a href="<?php echo site_url() ?>" title="<?php _e( 'Home', 'buddypress' ) ?>"><?php _e( 'Home', 'buddypress' ) ?></a>
             </li>
             <?php wp_list_pages( 'title_li=&exclude=1896,1919,1921' ); ?>
+            <li><a href="<?php bloginfo('url'); ?>/wp-content/themes/formacaogesac_bp/pontosatendidos.php">Pontos atendidos</a></li>
             <li><a href="<?php bloginfo('url'); ?>/blog/category/labblog/">Notícias</a></li>
             <li><a href="<?php bloginfo('url'); ?>/blog/2009/09/26/baixe-o-livro-culturadigital-br/">Download do livro</a></li>
         </ul>
@@ -83,6 +84,7 @@
             <?php wp_list_pages( 'title_li=&depth=1&exclude=1896,1919,1921' ); ?>
             <li><a href="<?php bloginfo('url'); ?>/blog/2009/09/26/baixe-o-livro-culturadigital-br/">Download do livro</a></li>
             <li><a href="<?php bloginfo('url'); ?>/blog/category/labblog/">Notícias</a></li>
+            <li><a href="<?php bloginfo('url'); ?>/wp-content/themes/formacaogesac_bp/pontosatendidos.php">Pontos atendidos</a></li>
         </ul>
         
         <ul>
