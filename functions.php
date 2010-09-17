@@ -37,8 +37,8 @@
 	include_once(TEMPLATEPATH . '/global/inc/tabbed_dynamic_sidebar.php');
     
 	function fg_custom_profile_fields () {
-  		require_once('userprofile/form.php');
                 require_once('userprofile/termo.php');
+  		require_once('userprofile/form.php');                
 	}
 	add_action ('bp_after_signup_profile_fields', 'fg_custom_profile_fields');
 
