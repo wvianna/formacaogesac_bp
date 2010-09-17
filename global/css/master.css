@@ -291,8 +291,8 @@ form#search-form input#search-terms{
 #navigation a:hover {color:#1F9ED7; background:#fff; text-decoration:none; border-radius:100%; -moz-border-radius:100%; -webkit-border-radius:100%; }
 #navigation .current_page_item a { color: #7FC8E8; }
 #navigation .current_page_item a:hover {background:none; color: #7FC8E8;}
-#navigation .nav{float:left;}
-#navigation .bpNav{float:right;}
+#navigation .nav{float:right;}
+#navigation .bpNav{float:left;}
 
 #navigation li.dropdown a{
 	background:url('../img/bg/bg_dropdown.jpg') right 10px no-repeat;

@@ -5,8 +5,3 @@
   }
 </script>
 
-<div class="customField">
-   <br><br><br>
-   <h2><a href="javascript:;" onclick="javascript:abrePop();">Consulte o ponto que você pertence</a></h2>
-  </label>
-</div>
