@@ -6,6 +6,7 @@
 </script>
 
 <div class="customField">
-    <a href="javascript:;" onclick="javascript:abrePop();">Consulte o ponto que você pertence</a>
+    <br><br><br>
+    <h2><a href="javascript:;" onclick="javascript:abrePop();">Consulte o ponto que você pertence</h2>
   </label>
 </div>
