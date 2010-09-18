@@ -11,7 +11,6 @@ _____________________________________________*/
     margin-bottom:15px;
 }
 .registration div.main div.register-section{
-    margin-bottom:25px;
     width:50%;
 }
 .registration div.main div.register-section h4{
@@ -19,6 +18,7 @@ _____________________________________________*/
 	font-size:1.8em;
 	font-weight:bold;
 	letter-spacing:-1px;
+        display:none
 }
 .registration div.main div#basic-details-section{
     display:inline;
@@ -29,7 +29,6 @@ _____________________________________________*/
     float:left;
 }
 .registration div.main div#blog-details-section{
-    float:right;
 }
 .registration div.main div#blog-details-section p{
     margin-top:15px;
