@@ -233,6 +233,7 @@ a:hover { text-decoration:underline; }
 background:url("../img/bgDivHeaderBrasil.gif") repeat-x scroll 0 0 transparent;
 padding-bottom:4px;
 height:35px;
+/* retirar quando voltar esta barra */
 margin-top:25px;
 }
 
@@ -262,6 +263,7 @@ background:#fff url(../img/bg_top.gif) no-repeat 100% 0;
 padding-top:23px;
 height:104px;
 clear:both;
+margin-top:25px;
 }
 
 #top_right { text-align:right; float:right; padding-right:12px; padding-top:15px;}
