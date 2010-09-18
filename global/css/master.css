@@ -2250,14 +2250,11 @@ div#content div.widget_activity li.load-more
 .customField { clear:both; }
 
 .messageAlertLoginWidgetRegister {
-  color:red;
-  font-size:10px;
   margin-bottom:1em;
   margin-left:1.5em;
+  font-size:10px;
 }
 .messageAlertLoginRegister {
-  color:red;
-  font-size:10px;
   margin-bottom:1em;
 }
 
