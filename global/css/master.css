@@ -370,8 +370,9 @@ form#search-form input#search-terms{
 #content h1 { margin-top:.5em; color: #0091D2; font-size:2em}
 #content h2 { font-size:1.4em !important; color:#0091D2 !important; margin-bottom:.6em !important; }
 #content h3 { font-size: 1.1em; color:#38464C; margin-bottom:.6em; }
+#content h4 { font-size: 1em; color:#38464C; }
 #content ul { list-style: inside url("../img/bullet.gif"); /* line-height:2em; */ }
-.date, .time-since, .view, .item-button {color: #999; font-size:.8em;}	
+.date, .rss-date, .time-since, .view, .item-button {color: #999; font-size:.8em !important;}	
 #content li {list-style:none none}
 .alignleft, .align-right {clear:both; float:left; margin:.2em 1em 0 0; display:block;}
 .alignleft .wp-caption-text, .align-right .wp-caption-text {text-align:left;}
@@ -598,6 +599,7 @@ input.active{
 /** Botões */
 
 .submitDefault
+, .load-more a
 , #blogs_search_submit
 , #members_search_submit
 , #groups_search_submit
@@ -622,13 +624,14 @@ text-shadow: 0 1px 1px rgba(255,255,255,.3);
 box-shadow: 0 1px 2px rgba(0,0,0,.2);
 color: #fff;
 border: solid 1px #3486B0;
-background: #1F4461;
-background: -webkit-gradient(linear, left top, left bottom, from(#3A9AC8), to(#1F4461));
-background: -moz-linear-gradient(top, #3A9AC8, #1F4461);
+background: #1F4461 !important;
+background: -webkit-gradient(linear, left top, left bottom, from(#3A9AC8), to(#1F4461))  !important;
+background: -moz-linear-gradient(top, #3A9AC8, #1F4461)  !important;
 filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#3A9AC8', endColorstr='#1F4461');
 }
 
 .submitDefault:hover
+, .load-more a:hover
 , #blogs_search_submit:hover
 , #members_search_submit:hover
 , #groups_search_submit:hover
@@ -637,14 +640,15 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#3A9AC8', end
 , #cancel-comment-reply-link:hover
 , #submit:hover {
 text-decoration: none;
-background: #11719C;
-background: -webkit-gradient(linear, left top, left bottom, from(#7FC8E8), to(#11719C));
-background: -moz-linear-gradient(top,  #7FC8E8,  #11719C);
+background: #11719C !important;
+background: -webkit-gradient(linear, left top, left bottom, from(#7FC8E8), to(#11719C))  !important;
+background: -moz-linear-gradient(top,  #7FC8E8,  #11719C)  !important;
 filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7FC8E8', endColorstr='#11719C');
 border: solid 1px #3A9AC8;
 }
 
 .submitDefault:active
+, .load-more a:active
 , #blogs_search_submit:active
 , #members_search_submit:active
 , #groups_search_submit:active
@@ -671,6 +675,7 @@ box-shadow: none;
 input,
 textarea,
 select,
+button,
 form#whats-new-form #whats-new-textarea {
 background:#F5f5f5 url(../img/bg_searchbox.png) repeat-x;
 border:1px solid #B0CEDB;
@@ -683,6 +688,7 @@ font-size:.95em
 
 input:hover,
 textarea:hover,
+button:hover,
 select:hover {
 -webkit-box-shadow:0 0 3px #CBCFD0;
 -moz-box-shadow: 0 0 3px #CBCFD0; 
@@ -1214,7 +1220,6 @@ div.widget_bp_groups_widget
 div.widget_bp_groups_widget div.item-options
 , div.widget_bp_core_members_widget div.item-options{
 	border-bottom:1px solid #ccc;
-	font-size:1.2em;
     margin:-4px 0 3px;
 	padding:0 0 3px;
     text-align:right;
@@ -1326,7 +1331,7 @@ div.main div.activity-comments > ul
 	margin-top:10px;
 }
 div.main div.widget_activity div.activity-inner{
-	font-size:1.2em;
+	/* font-size:1.2em; */
 }
 div.main div.activity-inner div.activity-inner{
 	background:0;
@@ -1354,13 +1359,13 @@ div.widget_activity ul.activity-list li
 }
 div.widget_activity ul.activity-list li.read-more{
 	border:medium none;
-	font-size:1.2em;
 	padding:10px 0 0;
 	text-align:right;
 }
 div.widget_activity div.activity-header
 , .activity ul.activity-list div.activity-header{
 	margin-right:75px;
+	font-size:0.9em
 }
 div.widget_activity div.activity-meta
 , .activity ul.activity-list div.activity-meta{
@@ -1493,7 +1498,7 @@ div.widget_blogs div.blogs ul.item-list div.item-title
 }
 div.widget_blogs div.blogs ul.item-list div.item-title a
 , body.blogs #content div.main div.item-title a{
-	font-size:1.2em;
+	font-size:1.1em;
 	font-weight:bold;
 	text-decoration:none;
 }
@@ -1551,6 +1556,7 @@ div.widget_login div.inputDefault
 	float:none;
 	margin-left:58px;
 	margin-bottom:6px;
+	height:26px;
 }
 div.widget_login div.inputDefault input
 , div.widget_register div.inputDefault input{
@@ -1558,14 +1564,13 @@ div.widget_login div.inputDefault input
 	width:100%;
 }
 div.widget_login div.pw{
-	margin-right:62px;
+	margin-right:85px;
 }
 div.widget_login button.submitDefault
 , div.widget_register button.submitDefault{
 	position:absolute;
 	top:30px;
 	right:0;
-	width:57px;
 }
 div.widget_login button.loading{
 	background-position:center;
@@ -1581,7 +1586,6 @@ div.widget_login div.forever label{
 }
 div.widget_login div.forever input{
 	display:inline;
-	border-color:#767676;
 	float:left;
 	margin-right:5px;
 }
@@ -1771,10 +1775,9 @@ div.item-list-tabs {
 
 div.item-list-tabs ul {
 	list-style: none;
-	
 	margin: 0;
 	padding: 0;
-	line-height: 200%;
+	height:22px;
 }
 	div.item-list-tabs ul li {
 		float: left;
@@ -1786,6 +1789,9 @@ div.item-list-tabs ul {
 		}
 
 	div.item-list-tabs ul li.last { float: right; }
+
+
+
 
 /***
  * Object Lists (groups/members/forums/blogs)
@@ -2216,21 +2222,13 @@ div#content div.widget_activity li.load-more
 .ver-todos a:hover{
 	text-decoration:underline !important;
 }
+
 .load-more a{
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
-	background:#f6f6f6;
-	border:1px solid #ccc;
-	color:#666 !important;
-	display:block;
-	font-size:1.2em;
-	height:13px;
-	padding:2px 0 5px;
-	text-align:center;
-	text-decoration:none;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	display:block !important;
 }
 .load-more a:hover{
-	border:1px solid #707070;
 	text-decoration:none !important;
 }
 .load-more a:active
@@ -2243,7 +2241,7 @@ div#content div.widget_activity li.load-more
 }
 .load-more a.loading
 , .load-more.loading a{
-	background:url("../img/bg/bg_loading.gif") center no-repeat;
+	background:#666 url("../img/bg/bg_loading.gif") center no-repeat;
 	border:none;
 	text-indent:-999em;
 }
@@ -2252,14 +2250,11 @@ div#content div.widget_activity li.load-more
 .customField { clear:both; }
 
 .messageAlertLoginWidgetRegister {
-  color:red;
-  font-size:10px;
   margin-bottom:1em;
   margin-left:1.5em;
+  font-size:10px;
 }
 .messageAlertLoginRegister {
-  color:red;
-  font-size:10px;
   margin-bottom:1em;
 }
 
