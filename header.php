@@ -35,7 +35,7 @@
 <li><a href="#footer">Pular para o rodapé</a></li>
 </ul>
 
-	<div id="headerbr">
+	<div id="headerbr" style="display:none">
 		<div class="mclogo"><img src="<?php bloginfo('template_url');?>/global/img/comunicacoes_logo.png" alt="Comunicações - Ministério das Comunicações" title="Comunicações - Ministério das Comunicações" class="comunicacoes" /></div>
 		<div class="brasillogo"><!-- <img src="++resource++gesac.theme.images/imgLogoBrasil.gif" alt="Brasil - Um País de todos" title="Brasil - Um País de todos" height="35" width="105"> --></div>
     </div>
