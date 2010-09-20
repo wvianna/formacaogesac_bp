@@ -50,8 +50,8 @@
                             <?php wp_nonce_field( 'bp_search_form' ) ?>
                         </form>
 			<div id="acessibilidade">
-				<a href="#"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-mais.gif" alt="Aumentar letra" /></a>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-menos.gif" alt="Diminuir letra" /></a>
+				<a href="#" id="aumenta_fonte"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-mais.gif" alt="Aumentar letra" /></a>
+				<a href="#" id="diminui_fonte"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-menos.gif" alt="Diminuir letra" /></a>
 			</div>
 		</div>
   </div>
