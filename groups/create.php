@@ -223,7 +223,7 @@
                             <?php do_action( 'bp_before_group_creation_step_buttons' ); ?>
             
                             <?php if ( 'crop-image' != bp_get_avatar_admin_step() ) : ?>
-                                <div class="submit clear" id="previous-next">
+                                <div class="submit" id="previous-next">
                                     <?php /* Previous Button */ ?>
                                     <?php if ( !bp_is_first_group_creation_step() ) : ?>
                                         <input class="submitDefault" type="button" value="&larr; <?php _e('Previous Step', 'buddypress') ?>" id="group-creation-previous" name="previous" onclick="location.href='<?php bp_group_creation_previous_link() ?>'" />
