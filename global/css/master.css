@@ -2302,3 +2302,9 @@ div#content div.widget_activity li.load-more
 }
 
 .container_11 .grid_900 {width:95%;}
+
+#blog-post-list li {
+    border-bottom:3px solid #F8F8F8;
+}
+
+
