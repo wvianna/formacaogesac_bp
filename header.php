@@ -44,7 +44,7 @@
     	<a href="<?php echo site_url() ?>" title="<?php bp_site_name() ?>" id="logo"><img src="<?php bloginfo('template_url');?>/global/img/logo.png" alt="<?php bloginfo('title')?>" /></a>
 		<div id="top_right">	
                         <form action="<?php echo bp_search_form_action() ?>" method="post" id="search-form">
-                            <input type="text" id="search-terms" class="inputDefault" name="search-terms" value="o que proucura?" />
+                            <input type="text" id="search-terms" class="inputDefault" name="search-terms" value="digite sua busca" />
                             <?php echo bp_custom_search_form_type_select() ?>
                             <input type="submit" name="search-submit" id="search-submit" class="submitDefault" value="buscar" />
                             <?php wp_nonce_field( 'bp_search_form' ) ?>
