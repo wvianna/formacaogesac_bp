@@ -547,7 +547,7 @@ div.sidebar div.right-column-3{
 -------------------------------------------------------------- */
 .sidebar h2 { color: #38464C; font-size:1.2em; margin-bottom:.5em }
 .sidebar ul { list-style:none; }
-.sidebar ul.menu {margin-bottom:2em}
+.sidebar ul.menu {margin-bottom:0}
 .sidebar ul.menu li { border-bottom: 3px solid white; line-height:3em; font-weight:bold; padding-left:30px; }
 .sidebar ul.menu li a {display:block;}
 .sidebar ul, #sidebar li {list-style:none none;}
