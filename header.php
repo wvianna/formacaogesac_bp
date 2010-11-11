@@ -64,6 +64,9 @@
                         <?php else : header_menu(); endif; ?>
                         
                         <ul class="bpNav">
+                            <li>
+                                <a href="<?php bloginfo('url'); ?>" alt="home">Home</a>
+                            </li>
                             <li<?php if ( bp_is_page( BP_MEMBERS_SLUG ) || bp_is_member() ) : ?> class="selected"<?php endif; ?>>
                                 <a href="<?php echo site_url() ?>/<?php echo BP_MEMBERS_SLUG ?>/" title="<?php _e( 'Members', 'buddypress' ) ?>"><?php _e( 'Members', 'buddypress' ) ?></a>
                             </li>
