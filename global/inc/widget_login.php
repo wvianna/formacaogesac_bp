@@ -64,10 +64,10 @@ class widget_login extends WP_Widget
 		
 		?>
         <div class="panel">
-            <a href="<?php echo $bp->loggedin_user->domain; ?>" title="Perfil"><?php bp_loggedin_user_avatar( 'type=thumb&width=62&height=62' ) ?></a>
+            <a href="<?php echo $bp->loggedin_user->domain; ?>friends" title="Perfil"><?php bp_loggedin_user_avatar( 'type=thumb&width=62&height=62' ) ?></a>
             <h3>Olá <strong><?php echo $bp->loggedin_user->fullname; ?></strong>.</h3>
             <div class="linksAdmin">
-            	<a id="memberProfile" href="<?php echo $bp->loggedin_user->domain; ?>">Meu perfil</a> | <strong><a class="button logout" href="<?php echo wp_logout_url( bp_get_root_domain() ) ?>">Sair</a></strong>
+            	<a id="memberProfile" href="<?php echo $bp->loggedin_user->domain; ?>friends">Meu perfil</a> | <strong><a class="button logout" href="<?php echo wp_logout_url( bp_get_root_domain() ) ?>">Sair</a></strong>
             </div>
             <div class="msg">
             	<p>
