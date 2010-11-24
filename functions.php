@@ -284,7 +284,6 @@
 	if(function_exists('register_sidebar'))
 	{
 		my_register_sidebar('left-column');
-		my_register_sidebar('center-column');
 		my_register_sidebar('left-center-column');
 		my_register_sidebar('left-bottom-column');
 		my_register_sidebar('right-column-1');

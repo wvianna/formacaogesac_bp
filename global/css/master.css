@@ -531,7 +531,7 @@ div.center-column div.widget
     overflow:auto;
 }
 
-.home-page .main .grid_4 {width:48%;}
+.home-page .main .grid_4 {width:99%;}
 .home-page .main .grid_8 {width:99%;}
 
 div.left-center-column
@@ -2050,6 +2050,7 @@ div.pagination div.pag-count{
 }
 div.pagination div.pagination-links{
 	float:right;
+        display: none;
 }
 
 div.pagination div.pagination-links span
