@@ -66,7 +66,7 @@ class widget_activity_members extends WP_Widget
 
 							<?php if ( bp_activity_has_content() ) : ?>
 								<div class="activity-inner">
-									<?php limit_chars(bp_get_activity_content_body(), 300); ?>
+									<?php limit_chars(bp_activity_content_body(), 300); ?>
 								</div>
 							<?php endif; ?>
 
