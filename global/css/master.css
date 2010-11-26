@@ -528,10 +528,11 @@ div.tabs ul.tabs li.ui-tabs-selected a
 div.center-column div.widget
 , div.left-column div.widget{
    /*  height:285px; */
+    height:884px;
     overflow:auto;
 }
 
-.home-page .main .grid_4 {width:99%;}
+.home-page .main .grid_4 {width:48%;}
 .home-page .main .grid_8 {width:99%;}
 
 div.left-center-column
@@ -2033,7 +2034,7 @@ div.pagination
 	border-radius:4px;
 	color:#888;
 	/* font-size:1.1em; */
-	height:26px;
+	height:60px;
 	margin:0;
 	padding:4px 1em;
 	overflow:hidden;
@@ -2049,8 +2050,8 @@ div.pagination div.pag-count{
 	margin-top:6px;
 }
 div.pagination div.pagination-links{
-	float:right;
-        display: none;
+	float:left;
+        /* display: none; */
 }
 
 div.pagination div.pagination-links span
@@ -2308,4 +2309,6 @@ div#content div.widget_activity li.load-more
     border-bottom:3px solid #F8F8F8;
 }
 
-
+#member-dir-pag {
+    display: none;
+}

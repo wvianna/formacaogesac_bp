@@ -8,6 +8,11 @@
     <div class="left-column tabs"><?php tabbed_dynamic_sidebar('left-column'); ?></div>
     </div>
      <?php endif; ?>
+    <?php if(has_active_widgets('center-column')) : ?>
+      <div class="grid_4 omega">
+      <div class="center-column tabs"><?php tabbed_dynamic_sidebar('center-column'); ?></div>
+      </div>
+    <?php endif; ?>                    
     <div class="clear"></div>
     <?php if(has_active_widgets('left-center-column')) : ?>
     <div class="grid_8 alpha omega">
