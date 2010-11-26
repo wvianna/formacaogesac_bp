@@ -1478,7 +1478,7 @@ div.widget_blogs div.item-list-tabs li.selected a{
     font-weight:bold;
 }
 div.widget_blogs div.blogs ul.item-list li{
-	height:57px;
+	height:auto;
 	padding:10px;
 	position:relative;
 	border-bottom:3px solid #f8f8f8;
