@@ -234,7 +234,7 @@ background:url("../img/bgDivHeaderBrasil.gif") repeat-x scroll 0 0 transparent;
 padding-bottom:4px;
 height:35px;
 /* retirar quando voltar esta barra */
-margin-top:25px;
+
 }
 
 #headerbr .mclogo {
@@ -264,6 +264,7 @@ background:#fff url(../img/bg_top.gif) no-repeat 100% 0;
 padding-top:23px;
 height:104px;
 clear:both;
+margin-top:25px;
 }
 
 #top_right { text-align:right; float:right; padding-right:12px; padding-top:15px;}
@@ -2304,5 +2305,5 @@ div#content div.widget_activity li.load-more
 .container_11 .grid_900 {width:95%;}
 
 
-.redessociais {right:3%; position:absolute; top:72px;}
+.redessociais {right:3%; position:absolute; top:35px;}
 .redessociais img {background:white; padding:2px; border:1px solid #0cF; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; }

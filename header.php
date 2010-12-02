@@ -35,7 +35,7 @@
 <li><a href="#footer">Pular para o rodapé</a></li>
 </ul>
 
-	<div id="headerbr">
+	<div id="headerbr" style="display:none">
 		<div class="mclogo"><img src="<?php bloginfo('template_url');?>/global/img/comunicacoes_logo.png" alt="Comunicações - Ministério das Comunicações" title="Comunicações - Ministério das Comunicações" class="comunicacoes" /></div>
 		<div class="brasillogo"><img src="<?php bloginfo('template_url');?>/global/img/barraGovFed_logo.png" alt="Brasil.gov.br" /></div>
     </div>
