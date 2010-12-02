@@ -249,9 +249,10 @@ padding-left:44px;
 
 #headerbr .brasillogo {
 background:url("../img/imgBrasilPais.gif") no-repeat scroll 0 0 transparent;
-height:35px;
+height:32px;
 width:120px;
 float:right;
+padding-top:2px;
 }
 
 /* #header
@@ -263,7 +264,6 @@ background:#fff url(../img/bg_top.gif) no-repeat 100% 0;
 padding-top:23px;
 height:104px;
 clear:both;
-margin-top:25px;
 }
 
 #top_right { text-align:right; float:right; padding-right:12px; padding-top:15px;}
@@ -528,7 +528,6 @@ div.tabs ul.tabs li.ui-tabs-selected a
 div.center-column div.widget
 , div.left-column div.widget{
    /*  height:285px; */
-    height:884px;
     overflow:auto;
 }
 
@@ -548,7 +547,7 @@ div.sidebar div.right-column-3{
 -------------------------------------------------------------- */
 .sidebar h2 { color: #38464C; font-size:1.2em; margin-bottom:.5em }
 .sidebar ul { list-style:none; }
-.sidebar ul.menu {margin-bottom:0}
+.sidebar ul.menu {margin-bottom:2em}
 .sidebar ul.menu li { border-bottom: 3px solid white; line-height:3em; font-weight:bold; padding-left:30px; }
 .sidebar ul.menu li a {display:block;}
 .sidebar ul, #sidebar li {list-style:none none;}
@@ -1478,7 +1477,7 @@ div.widget_blogs div.item-list-tabs li.selected a{
     font-weight:bold;
 }
 div.widget_blogs div.blogs ul.item-list li{
-	height:auto;
+	height:57px;
 	padding:10px;
 	position:relative;
 	border-bottom:3px solid #f8f8f8;
@@ -2035,7 +2034,6 @@ div.pagination
 	border-radius:4px;
 	color:#888;
 	/* font-size:1.1em; */
-	height:60px;
 	margin:0;
 	padding:4px 1em;
 	overflow:hidden;
@@ -2051,8 +2049,7 @@ div.pagination div.pag-count{
 	margin-top:6px;
 }
 div.pagination div.pagination-links{
-	float:left;
-        /* display: none; */
+	float:right;
 }
 
 div.pagination div.pagination-links span
@@ -2306,10 +2303,6 @@ div#content div.widget_activity li.load-more
 
 .container_11 .grid_900 {width:95%;}
 
-#blog-post-list li {
-    border-bottom:3px solid #F8F8F8;
-}
 
-#member-dir-pag {
-    display: none;
-}
+.redessociais {right:3%; position:absolute; top:72px;}
+.redessociais img {background:white; padding:2px; border:1px solid #0cF; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
