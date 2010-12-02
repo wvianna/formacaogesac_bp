@@ -1894,7 +1894,8 @@ ul.activity-list {
 
 ul.activity-list li {
 	overflow: hidden;
-	padding: 20px 0;
+	border-bottom: 3px solid #F8F8F8;
+	padding-top:10px
 }
 	ul.activity-list li img.avatar {
 		float: left;
