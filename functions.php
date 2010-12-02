@@ -35,6 +35,7 @@
 	include_once(TEMPLATEPATH . '/global/inc/widget_map.php');
 	include_once(TEMPLATEPATH . '/global/inc/widget_comentarios.php');
 	include_once(TEMPLATEPATH . '/global/inc/widget_tags.php');
+	include_once(TEMPLATEPATH . '/global/inc/widget_acontece_rede.php');
 	include_once(TEMPLATEPATH . '/global/inc/tabbed_dynamic_sidebar.php');
     
 	function fg_custom_profile_fields () {
