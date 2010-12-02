@@ -35,7 +35,7 @@ class widget_acontece_rede extends WP_Widget {
                       <?php endif; ?>
 		         <?php $resultado = $wpdb->get_results("SELECT *
 								FROM wp_bp_activity
-								where primary_link not like '%/testeblog%'
+								where primary_link not like '%/portal/%'
 								order by id desc", OBJECT); ?>	
 			 <?php foreach($resultado as $result) : ?>
 			    <?php while ( bp_activities() ) : bp_the_activity(); ?>
