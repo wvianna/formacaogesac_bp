@@ -27,6 +27,7 @@
 	include_once(TEMPLATEPATH . '/global/inc/the_thumb.php');
 	include_once(TEMPLATEPATH . '/global/inc/widget_destaque.php');
 	include_once(TEMPLATEPATH . '/global/inc/widget_atividades.php');
+	include_once(TEMPLATEPATH . '/global/inc/widget_atividades_members.php');
 	include_once(TEMPLATEPATH . '/global/inc/widget_blogs.php');
 	include_once(TEMPLATEPATH . '/global/inc/widget_customPosts.php');
 	include_once(TEMPLATEPATH . '/global/inc/widget_login.php');
