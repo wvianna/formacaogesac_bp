@@ -37,21 +37,26 @@
 
 	<div id="headerbr" style="display:none">
 		<div class="mclogo"><img src="<?php bloginfo('template_url');?>/global/img/comunicacoes_logo.png" alt="Comunicações - Ministério das Comunicações" title="Comunicações - Ministério das Comunicações" class="comunicacoes" /></div>
-		<div class="brasillogo"><!-- <img src="++resource++gesac.theme.images/imgLogoBrasil.gif" alt="Brasil - Um País de todos" title="Brasil - Um País de todos" height="35" width="105"> --></div>
+		<div class="brasillogo"><img src="<?php bloginfo('template_url');?>/global/img/barraGovFed_logo.png" alt="Brasil.gov.br" /></div>
     </div>
 	<div id="header">
 	<div class="container_11">
     	<a href="<?php echo site_url() ?>" title="<?php bp_site_name() ?>" id="logo"><img src="<?php bloginfo('template_url');?>/global/img/logo.png" alt="<?php bloginfo('title')?>" /></a>
+    	<div class="redessociais">
+    	<a href="http://www.orkut.com.br/Main#Profile?uid=8356572360662989605"><img src="<?php bloginfo('template_url');?>/global/img/orkut.png" alt="Orkut" /></a>
+    	<a href="http://www.facebook.com/pages/Brasilia-Brazil/Projeto-Formacao-Gesac/124820184242998?v=wall"><img src="<?php bloginfo('template_url');?>/global/img/facebook.png" alt="Facebook" /></a>
+    	<a href="http://twitter.com/FormacaoGesac"><img src="<?php bloginfo('template_url');?>/global/img/twitter.png" alt="Twitter" /></a>
+    	</div>
 		<div id="top_right">	
                         <form action="<?php echo bp_search_form_action() ?>" method="post" id="search-form">
-                            <input type="text" id="search-terms" class="inputDefault" name="search-terms" value="digite sua busca" />
+                            <input type="text" id="search-terms" class="inputDefault" name="search-terms" value="o que proucura?" />
                             <?php echo bp_custom_search_form_type_select() ?>
                             <input type="submit" name="search-submit" id="search-submit" class="submitDefault" value="buscar" />
                             <?php wp_nonce_field( 'bp_search_form' ) ?>
                         </form>
 			<div id="acessibilidade">
-				<a href="#" id="aumenta_fonte"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-mais.gif" alt="Aumentar letra" /></a>
-				<a href="#" id="diminui_fonte"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-menos.gif" alt="Diminuir letra" /></a>
+				<a href="#"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-mais.gif" alt="Aumentar letra" /></a>
+				<a href="#"><img src="<?php bloginfo('template_url');?>/global/img/icon_a-menos.gif" alt="Diminuir letra" /></a>
 			</div>
 		</div>
   </div>
@@ -64,9 +69,6 @@
                         <?php else : header_menu(); endif; ?>
                         
                         <ul class="bpNav">
-                            <li>
-                                <a href="<?php bloginfo('url'); ?>" alt="home">Home</a>
-                            </li>
                             <li<?php if ( bp_is_page( BP_MEMBERS_SLUG ) || bp_is_member() ) : ?> class="selected"<?php endif; ?>>
                                 <a href="<?php echo site_url() ?>/<?php echo BP_MEMBERS_SLUG ?>/" title="<?php _e( 'Members', 'buddypress' ) ?>"><?php _e( 'Members', 'buddypress' ) ?></a>
                             </li>
