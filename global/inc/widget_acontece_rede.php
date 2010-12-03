@@ -29,7 +29,7 @@ class widget_acontece_rede extends WP_Widget {
 		</a>
 		<div class="activity">	
                    <?php do_action( 'bp_before_activity_loop' ) ?>	   
-		   <?php if ( bp_has_activities('&user_id=0&per_page=5&scope=') ) : ?>
+		   <?php if ( bp_has_activities('&user_id=0&per_page=10&scope=') ) : ?>
                       <?php if ( empty( $_POST['page'] ) ) : ?>
                       <ul id="blog-post-list" class="activity-list item-list">
                       <?php endif; ?>

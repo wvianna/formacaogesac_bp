@@ -43,7 +43,7 @@ class widget_activity extends WP_Widget
 	    <div class="activity">
 	        <?php do_action( 'bp_before_activity_loop' ) ?>
 
-			<?php if ( bp_has_activities( '&per_page=5&scope=' ) ) : ?>
+			<?php if ( bp_has_activities( '&per_page=10&scope=' ) ) : ?>
 
 				<?php if ( empty( $_POST['page'] ) ) : ?>
 					<ul id="activity-stream" class="activity-list item-list">
