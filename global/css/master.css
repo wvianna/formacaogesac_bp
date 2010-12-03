@@ -528,7 +528,7 @@ div.tabs ul.tabs li.ui-tabs-selected a
  
 div.center-column div.widget
 , div.left-column div.widget{
-   /*  height:285px; */
+    height:980px;
     overflow:auto;
 }
 
