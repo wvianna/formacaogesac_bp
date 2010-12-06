@@ -67,7 +67,27 @@
                 <div class="right-column right-column-3 tabs">
                     <?php tabbed_dynamic_sidebar('members-column-3'); ?>
                 </div>
-		<?php endif; ?>
+    		<?php endif; ?>
+    	  <?php if(has_active_widgets('members-column-4')) : ?>
+                <div class="right-column right-column-4 tabs">
+                    <?php tabbed_dynamic_sidebar('members-column-4'); ?>
+                </div>
+				<?php endif; ?>
+				<?php if(has_active_widgets('members-column-5')) : ?>
+                <div class="right-column right-column-5 tabs">
+                    <?php tabbed_dynamic_sidebar('members-column-5'); ?>
+                </div>
+				<?php endif; ?>
+				<?php if(has_active_widgets('members-column-6')) : ?>
+                <div class="right-column right-column-6 tabs">
+                    <?php tabbed_dynamic_sidebar('members-column-6'); ?>
+                </div>
+				<?php endif; ?>
+				<?php if(has_active_widgets('members-column-7')) : ?>
+                <div class="right-column right-column-7 tabs">
+                    <?php tabbed_dynamic_sidebar('members-column-7'); ?>
+                </div>
+				<?php endif; ?>
    </div>
   <div class="clear"></div>
   </div>

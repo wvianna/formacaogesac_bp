@@ -295,6 +295,10 @@
 		my_register_sidebar('members-column-1');
 		my_register_sidebar('members-column-2');
 		my_register_sidebar('members-column-3');
+		my_register_sidebar('members-column-4');
+		my_register_sidebar('members-column-5');
+		my_register_sidebar('members-column-6');
+		my_register_sidebar('members-column-7');
 	}
 
 	// Adciona avatar padrao	
