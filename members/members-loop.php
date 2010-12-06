@@ -11,7 +11,7 @@
 		</div>
 
 		<div class="pagination-links" id="member-dir-pag">
-		    <p><span>Visualização:</span> <a href="#" class="one-column">Uma coluna</a> <a href="#" class="two-column">Duas colunas</a></p>
+		    <!--<p><span>Visualização:</span> <a href="#" class="one-column">Uma coluna</a> <a href="#" class="two-column">Duas colunas</a></p>-->
 			<?php bp_members_pagination_links() ?>
 		</div>
 
