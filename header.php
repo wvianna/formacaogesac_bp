@@ -44,7 +44,7 @@
     	<a href="<?php echo site_url() ?>" title="<?php bp_site_name() ?>" id="logo"><img src="<?php bloginfo('template_url');?>/global/img/logo.png" alt="<?php bloginfo('title')?>" /></a>
     	<div class="redessociais">
     	<a href="http://www.orkut.com.br/Main#Profile?uid=8356572360662989605"><img src="<?php bloginfo('template_url');?>/global/img/orkut.png" alt="Orkut" /></a>
-    	<a href="http://www.facebook.com/pages/Brasilia-Brazil/Projeto-Formacao-Gesac/124820184242998?v=wall"><img src="<?php bloginfo('template_url');?>/global/img/facebook.png" alt="Facebook" /></a>
+    	<a href="http://www.facebook.com/pages/Brasilia-Brazil/Projeto-Formacao-Gesac/124820184242998?v=wall"><img src="<?php bloginfo('template_url');?>/global/img/facebook.png" alt="Facebook" /></a><a href="http://www.flickr.com/photos/formacaogesac"><img src="<?php bloginfo('template_url');?>/global/img/flickr.png" alt="Flickr" /></a>
     	<a href="http://twitter.com/FormacaoGesac"><img src="<?php bloginfo('template_url');?>/global/img/twitter.png" alt="Twitter" /></a>
     	</div>
 		<div id="top_right">	

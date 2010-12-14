@@ -294,7 +294,7 @@ form#search-form input#search-terms{
 #navigation a:hover {color:#1F9ED7; background:#fff; text-decoration:none; border-radius:100%; -moz-border-radius:100%; -webkit-border-radius:100%; }
 #navigation .current_page_item a { color: #7FC8E8; }
 #navigation .current_page_item a:hover {background:none; color: #7FC8E8;}
-#navigation .nav{float:right;}
+#navigation .nav{float:right; padding-right:130px;}
 #navigation .bpNav{float:left;}
 
 #navigation li.dropdown a{
@@ -1499,7 +1499,6 @@ div.widget_blogs div.blogs ul.item-list div.item-title
 }
 div.widget_blogs div.blogs ul.item-list div.item-title a
 , body.blogs #content div.main div.item-title a{
-	font-size:1.1em;
 	font-weight:bold;
 	text-decoration:none;
 }
@@ -1909,7 +1908,7 @@ ul.activity-list li {
 	}
 
 	ul.activity-list li div.activity-comments {
-		margin: 15px 0 0 38px;
+		margin: 0 0 0 38px;
 	}
 		ul.activity-list li div.activity-comments ul li {
 			padding: 5px 0;
@@ -2047,6 +2046,7 @@ div.pagination div.pag-count{
 	display:inline;
 	float:left;
 	margin-top:6px;
+	font-size:0.8em
 }
 div.pagination div.pagination-links{
 	float:right;
@@ -2304,5 +2304,5 @@ div#content div.widget_activity li.load-more
 .container_11 .grid_900 {width:95%;}
 
 
-.redessociais {right:3%; position:absolute; top:35px;}
+.redessociais {right:3%; position:absolute; top:160px;}
 .redessociais img {background:white; padding:2px; border:1px solid #0cF; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
