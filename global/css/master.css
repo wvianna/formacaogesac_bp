@@ -2307,3 +2307,11 @@ div#content div.widget_activity li.load-more
 
 .redessociais {right:3%; position:absolute; top:160px;}
 .redessociais img {background:white; padding:2px; border:1px solid #0cF; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+
+ul#blog-post-list {
+    background-color: white;
+}
+
+#feed_rss {
+    background-color: white;
+}
