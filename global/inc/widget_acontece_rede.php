@@ -13,8 +13,9 @@ class widget_acontece_rede extends WP_Widget {
 	function widget_acontece_rede()
 	{
 		$widget_args = array('classname' => 'widget_acontece_rede', 'description' => __( 'O que acontece na rede') );                
-		parent::WP_Widget('widget_acontece_rede', __('O que acontece na rede'), $widget_args);
-                
+		$pagina_inicial = '<a href="'.site_url().'">O que acontece na rede</a>';
+		
+		parent::WP_Widget('widget_acontece_rede', $pagina_inicial, $widget_args);
 	}
 	
 	function widget($args, $instance)
@@ -186,7 +187,7 @@ class widget_acontece_rede extends WP_Widget {
 
 	function form($instance)
 	{
-	    	$title = esc_attr( $instance['title'] );
+	    	/*$title = esc_attr( $instance['title'] );
                 		
                 ?>
 		<p>
@@ -200,7 +201,7 @@ class widget_acontece_rede extends WP_Widget {
 		</p>
                 
             	
-        	<?php
+        	<?php*/
 	}
 }
 

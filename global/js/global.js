@@ -207,6 +207,10 @@ jQuery(function()
 		return false;
 	});
 	
+	//remover link do título da widget 'O que acontece na rede'
+	jQuery('div.left-column .tabs a[href ^="#widget_acontece_rede-"]').remove(); 
+	
+
 	// Widget Login Validation
 	jQuery('div.widget_login .submitDefault').not('div.widget_register .submitDefault').click(function()
 	{
