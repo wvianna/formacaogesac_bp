@@ -33,7 +33,7 @@ class widget_login extends WP_Widget
                 <label for="userLogin" class="login">Entrar:</label>
                 <div class="formfield">
                 	<label for="userLogin" class="displayNone">Nome do usuário:</label>
-                    <div class="login inputDefault"><input type="text" name="log" id="userLogin" value="Nome do usuário" /></div>
+                    <div class="login inputDefault"><input type="text" name="log" id="userLogin" value="Nome do usuário" onblur ="redirect_to.value = '<?php echo bloginfo('url').'/members/';?>'+this.value;" /></div>
                 	<label for="userPass" class="displayNone">Sua senha:</label>
                     <div class="pw inputDefault"><input type="password" name="pwd" class="userPass" id="userPass" value="Senha" /></div>
                     <div class="forever">
@@ -41,10 +41,14 @@ class widget_login extends WP_Widget
                         <label><input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Lembre-me</label>
                         <a href="<?php bloginfo('url'); ?>/wp-login.php?action=lostpassword" title="Esqueceu sua senha?" class="lostPassword">Esqueceu sua senha?</a>
                     </div>
-                    
+                    <!--
                     <button type="submit" name="wp-submit" class="userSubmit submitDefault" tabindex="40">Entrar</button>
                     <input type="hidden" name="redirect_to" value="<?php bloginfo('url'); ?>" />
+		    -->
+		    <button type="submit" name="wp-submit" tabindex="40" class="botao_login" onclick="this.className = 'botao_login loading'">Entrar</button>
+		    <input type="hidden" name="redirect_to" />
                     <input type="hidden" name="testcookie" value="1" />
+			
                 </div>
             </fieldset>
         </form>
