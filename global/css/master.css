@@ -373,7 +373,7 @@ form#search-form input#search-terms{
 #content h3 { font-size: 1.1em; color:#38464C; margin-bottom:.6em; }
 #content h4 { font-size: 1em; color:#38464C; }
 #content ul { list-style: inside url("../img/bullet.gif"); /* line-height:2em; */ }
-.date, .rss-date, .time-since, .view, .item-button {color: #999; font-size:.8em !important;}	
+.date, .rss-date, .time-since, .view, .item-button {color: #0E5F86; font-size:normal !important;}	
 #content li {list-style:none none}
 .alignleft, .align-right {clear:both; float:left; margin:.2em 1em 0 0; display:block;}
 .alignleft .wp-caption-text, .align-right .wp-caption-text {text-align:left;}
