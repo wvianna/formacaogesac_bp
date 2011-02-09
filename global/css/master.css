@@ -600,6 +600,7 @@ input.active{
 /** Botões */
 
 .submitDefault
+, .botao_login
 , .load-more a
 , #blogs_search_submit
 , #members_search_submit
@@ -632,6 +633,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#3A9AC8', end
 }
 
 .submitDefault:hover
+, .botao_login:hover
 , .load-more a:hover
 , #blogs_search_submit:hover
 , #members_search_submit:hover
@@ -649,6 +651,7 @@ border: solid 1px #3A9AC8;
 }
 
 .submitDefault:active
+, .botao_login:active
 , .load-more a:active
 , #blogs_search_submit:active
 , #members_search_submit:active
@@ -1445,7 +1448,7 @@ div.main div.activity-comments form div.ac-textarea{
 div.main div.activity-comments form div.ac-reply-content{
     margin-left:70px;
 }
-div.main .ac-reply-content .submitDefault{
+div.main .ac-reply-content .submitDefault .botao_login{
     float:none;
     margin-left:0;
 }
@@ -1568,11 +1571,14 @@ div.widget_login div.pw{
 	margin-right:85px;
 }
 div.widget_login button.submitDefault
-, div.widget_register button.submitDefault{
+, div.widget_register button.submitDefault
+, div.widget_login button.botao_login{
 	position:absolute;
 	top:30px;
 	right:0;
 }
+
+/*quebra do botão*/
 div.widget_login button.loading{
 	background-position:center;
 	text-indent:-999em;
