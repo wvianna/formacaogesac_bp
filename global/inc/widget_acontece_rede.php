@@ -25,11 +25,7 @@ class widget_acontece_rede extends WP_Widget {
                 $maxPages = empty($instance['maxPages']) ? 5 : $instance['maxPages'];    
                 
                 ?>
-        <div id="feed_rss">
-		    <a class="feed" href="<?php bp_sitewide_activity_feed_link() ?>" title="RSS Feed">
-			    <?php _e( 'RSS', 'buddypress' ) ?>
-		    </a>
-		</div>
+                <a class="feed" href="<?php bp_sitewide_activity_feed_link() ?>" title="RSS Feed"><?php _e( 'RSS', 'buddypress' ) ?></a>
 		<div class="activity">	
                    <?php do_action( 'bp_before_activity_loop' ) ?>	   
 		   <?php if ( bp_has_activities('&user_id=0&per_page=8&scope=') ) : ?>
