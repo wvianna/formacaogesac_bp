@@ -13,7 +13,7 @@
 		</div>
                     
 		<div class="postContent">
-		<?php the_content(); ?>
+		<?php echo stripslashes(get_the_content()); ?>
 		</div>
         
 		<?php comments_template('/comments.php', true); ?>
