@@ -534,6 +534,7 @@ div.center-column div.widget
 
 div.left-column div.activity{
     height:940px;
+    overflow:hidden;
     
 }
 
