@@ -532,6 +532,15 @@ div.center-column div.widget
     overflow:auto;
 }
 
+div.left-column div.activity{
+    height:940px;
+    
+}
+
+div.left-column div.read-more{
+    padding:20px 2px;
+}
+
 .home-page .main .grid_4 {width:48%;}
 .home-page .main .grid_8 {width:99%;}
 
@@ -1312,6 +1321,9 @@ div.main ul.activity-list li img.avatar{
     height:48px;
     width:48px;
 }
+/*alteração no tamanhoda div activity*/
+
+
 div.main div.activity-content{
 	margin:0 10px 0 70px;
 }
@@ -1361,6 +1373,7 @@ div.widget_activity ul.activity-list li
     padding:12px 0;
 	position:relative;
 }
+
 div.widget_activity ul.activity-list li.read-more{
 	border:medium none;
 	padding:10px 0 0;

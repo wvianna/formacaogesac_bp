@@ -28,7 +28,7 @@ class widget_acontece_rede extends WP_Widget {
                 <a class="feed" href="<?php bp_sitewide_activity_feed_link() ?>" title="RSS Feed"><?php _e( 'RSS', 'buddypress' ) ?></a>
 		<div class="activity">	
                    <?php do_action( 'bp_before_activity_loop' ) ?>	   
-		   <?php if ( bp_has_activities('&user_id=0&per_page=8&scope=') ) : ?>
+		   <?php if ( bp_has_activities('&user_id=0&per_page=10&scope=') ) : ?>
                       <?php if ( empty( $_POST['page'] ) ) : ?>
                       <ul id="blog-post-list" class="activity-list item-list">
                       <?php endif; ?>
@@ -154,9 +154,7 @@ class widget_acontece_rede extends WP_Widget {
 			       <?php endif?>
 			    <?php endwhile;?>
 			 <?php endforeach; ?>
-			 <div class="read-more">
-				<a href="<?php echo get_bloginfo('url').'/'.BP_ACTIVITY_SLUG; ?>">Leia Mais &raquo;</a>
-			 </div>
+			 
 		         <?php if ( empty( $_POST['page'] ) ) : ?>
 				</ul>
 			 <?php endif; ?>
@@ -168,7 +166,9 @@ class widget_acontece_rede extends WP_Widget {
 			 </form>
 		   <?php endif; ?>
 		</div>
-
+		<div class="read-more">
+			<a href="<?php echo get_bloginfo('url').'/'.BP_ACTIVITY_SLUG; ?>">Leia Mais &raquo;</a>
+		</div>
 		<?php	 
 	        
 	}
